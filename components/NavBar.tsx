@@ -38,9 +38,9 @@ const NavBar = () => {
 	}, [theme]);
 
 	return (
-		<div className='navbar bg-primary'>
+		<div className='navbar bg-primary z-10'>
 			<div className='navbar-start '>
-				<div className='dropdown  '>
+				<div className='dropdown z-50 '>
 					<div
 						tabIndex={0}
 						role='button'

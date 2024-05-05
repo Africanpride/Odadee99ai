@@ -44,3 +44,39 @@
   animation: spinner-y0fdc1 2.4s infinite ease;
   transform-style: preserve-3d;
 }
+
+.container-move-text {
+  display: flex;
+}
+
+.container-move-text.second {
+  justify-content: flex-end;
+}
+
+.heading-move {
+  text-transform: uppercase;
+  text-shadow: 0 0 2px #000;
+  white-space: nowrap;
+  -webkit-text-fill-color: transparent;
+  background-color: #fff;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-family: Poppins, sans-serif;
+  font-size: 140px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.second-move-heading {
+  text-transform: uppercase;
+  text-shadow: 0 0 2px #111010;
+  white-space: nowrap;
+  -webkit-text-fill-color: transparent;
+  background-color: #fff;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-family: Poppins, sans-serif;
+  font-size: 140px;
+  font-weight: 400;
+  line-height: 1;
+}

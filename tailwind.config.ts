@@ -10,7 +10,7 @@ const config: Config = {
 		extend: {
 		},
 	},
-	plugins: [require("daisyui")],
+	plugins: [require("@tailwindcss/typography"),require("daisyui")],
 	daisyui: {
 		// themes: ["light", "dark"],
 		themes: ["lofi","business"], // false: only light + dark | true: all themes | array: specific themes like this ["light", "dark", "cupcake"]
