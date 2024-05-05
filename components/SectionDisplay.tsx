@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { CircleChevronRight } from "lucide-react";
 import Link from "next/link";
@@ -9,6 +10,8 @@ import {
   inter_tight,
 } from "@/styles/fonts";
 import ImageGrid from "./ImageGrid";
+import ButtonUI from "./ButtonUI";
+import DonateButton from "./DonateButton";
 
 const titletext = `Empowering Tomorrow's Innovators`;
 
@@ -50,24 +53,20 @@ const SectionDisplay: React.FC<Props> = (props: Props) => {
               and a testament to our commitment to building a brighter tomorrow.
             </p>
           </div>
-          <div className="py-4">
-            <Link
-              href={"/about"}
-              className="btn btn-wide btn-md  rounded-full btn-primary btn-outline inline-flex justify-center items-center"
-            >
-              <span
-                className={`${ibm_plex_sans_condense.className} text-xl font-normal`}
-              >
-                Get Involved
-              </span>
-              <span className="">
-                <CircleChevronRight />
-              </span>
-            </Link>
+          <div className="w-full flex justify-start items-center gap-x-4 ">
+            <ButtonUI
+              actiontext="About Project"
+              actionlink={"/about"}
+              className="btn-wide"
+            />
+            <DonateButton
+              actiontext="Donate Now"
+              className="btn-outline btn-info text-lg font-normal md:text-lg"
+            />
           </div>
         </div>
         <div className="flex  gap-4 bg-none   overflow-hidden  rounded-3xl ">
-            <ImageGrid />
+          <ImageGrid />
         </div>
       </div>
     </section>

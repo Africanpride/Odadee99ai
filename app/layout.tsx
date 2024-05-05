@@ -1,11 +1,8 @@
 import type { Metadata } from "next";
-import { sourceCodePro400 } from "@/styles/fonts";
+import { sourceCodePro400, inter } from "@/styles/fonts";
 import "./globals.css";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
-
-
-
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +13,7 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" suppressHydrationWarning={true} >
+    <html lang="en" suppressHydrationWarning={true}>
       <body className={`${sourceCodePro400.className}`}>
         <NavBar />
         {children}

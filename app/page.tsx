@@ -1,6 +1,7 @@
 import InfiniteLogos from "@/components/backup/sections/infinitelogos";
 import InfinityImage from "@/components/InfinityImage";
 import { Movement } from "@/components/movement";
+import Newsletter from "@/components/Newsletter";
 import QuoteAI from "@/components/QuoteAI";
 import SectionDisplay from "@/components/SectionDisplay";
 import SectionHead from "@/components/SectionHead";
@@ -17,6 +18,7 @@ export default function Home() {
         full screen rendering ....
       </main> */}
       <QuoteAI />
+      <Newsletter />
     </div>
   );
 }

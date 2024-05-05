@@ -1,28 +1,32 @@
-import React from "react";
-import { CircleChevronRight } from 'lucide-react';
+import React, { ReactChild } from "react";
+import { CircleChevronRight } from "lucide-react";
 import Link from "next/link";
-import { inter, ibm_plex_sans_condense } from "@/styles/fonts";
+import { inter, ibm_plex_sans_condense, sourceCodePro700, sourceCodePro400 } from "@/styles/fonts";
 
 type Props = {
-    actiontext?: string;
-    actionlink?: string;
-
+  actiontext?: string;
+  actionlink?: string;
+  // icon that can be a React component
+  icon?: React.ReactNode;
+  // class name for the button
+  className?: string;
 };
 
 const ButtonUI = (props: Props) => {
   return (
     <div className="py-4">
       <Link
-        href={props.actionlink || '/'}
-        className={`btn  btn-sm md:btn-md  w-auto hover:btn-info rounded-3xl pl-2 btn-secondary 
-        inline-flex justify-center items-center`}>
+        href={props.actionlink || "/"}
+        className={`btn  btn-sm md:btn-md  hover:btn-info  btn-secondary 
+        flex justify-center items-center ${props.className}`}
+      >
         <span
-          className={`${ibm_plex_sans_condense.className} text-xl font-normal`}
+          className={`${sourceCodePro400.className} text-lg font-normal`}
         >
-          {props.actiontext || 'Come Join Us'}
+          {props.actiontext || "Come Join Us"}
         </span>
         <span className="">
-          <CircleChevronRight />
+          {props.icon || <CircleChevronRight />}
         </span>
       </Link>
     </div>

@@ -67,7 +67,7 @@ const NavBar = () => {
       <div className="navbar-end">
         <div className="flex justify-end items-center gap-x-2 ">
 		<div>
-			<DonateButton />
+			<DonateButton className="btn-outline btn-info uppercase text-xs" smallSize={true} />
 		</div>
 
           <div className="hidden md:inline-block ">
