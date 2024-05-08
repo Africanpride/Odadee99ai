@@ -9,20 +9,20 @@ import DonateButton from "./DonateButton";
 
 const NavBar = () => {
   // Define the type for the theme (Saving our eyes is necessary)
-  type Theme = "lofi" | "business";
+  type Theme = "lofi" | "black";
 
   // Initialize state with theme from local storage if available, otherwise we set lofi theme
   const [theme, setTheme] = useState<Theme>(
     typeof window !== "undefined" &&
-      localStorage.getItem("theme") === "business"
-      ? "business"
+      localStorage.getItem("theme") === "black"
+      ? "black"
       : "lofi"
   );
 
   // Update state on toggle
   const handleToggle: React.ChangeEventHandler<HTMLInputElement> = (e) => {
     if (e.target.checked) {
-      setTheme("business");
+      setTheme("black");
     } else {
       setTheme("lofi");
     }
@@ -38,7 +38,7 @@ const NavBar = () => {
   }, [theme]);
 
   return (
-    <div className="navbar bg-primary z-10">
+    <div className="navbar bg-primary dark:bg-secondary  z-10">
       <div className="navbar-start ">
         <div className="dropdown z-50 ">
           <div tabIndex={0} role="button" className="btn btn-ghost btn-circle ">
@@ -62,7 +62,7 @@ const NavBar = () => {
         <div className="text-white">Menu</div>
       </div>
       <div className="navbar-center">
-        <TextLogo />
+        <TextLogo /> <span className="text-red-500">{theme}</span>
       </div>
       <div className="navbar-end">
         <div className="flex justify-end items-center gap-x-2 ">
@@ -79,7 +79,7 @@ const NavBar = () => {
                 checked={theme === "lofi" ? false : true}
               />
               {/* lofi theme sun image */}
-              {theme === "business" ? (
+              {theme === "black" ? (
                 <span className="text-gray-100 w-6 h-6">
                   <Moon size={24} />
                 </span>

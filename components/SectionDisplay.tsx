@@ -8,7 +8,7 @@ import {
   sourceCodePro400,
   sourceCodePro700,
   inter_tight,
-} from "@/styles/fonts";
+} from "@/utils/styles/fonts";
 import ImageGrid from "./ImageGrid";
 import ButtonUI from "./ButtonUI";
 import DonateButton from "./DonateButton";
@@ -24,9 +24,9 @@ const SectionDisplay: React.FC<Props> = (props: Props) => {
     <section className="p-2 md:p-8 md:pt-0.5 md:py-24 bg-base-100 overflow-hidden  ">
       <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-8 gap-4 h-auto ">
         <div className="flex h-auto md:min-h-dvh flex-col items-start justify-between md:p-12 p-4 rounded-3xl bg-blue-400/10  border-opacity-15  space-y-2 ">
-          <div className="w-full flex justify-between items-center  ">
+          <div className="w-full flex justify-between items-center py-5 ">
             <div
-              className={`${ibm_plex_sans_condense.className} text-lg md:text-xl  tracking-tighter font-bold uppercase col-span-4  `}
+              className={`${ibm_plex_sans_condense.className} font-bold text-lg md:text-xl  tracking-tighter uppercase col-span-4  `}
             >
               {props.title || titletext} {/* Use default or passed title */}
             </div>
@@ -53,11 +53,11 @@ const SectionDisplay: React.FC<Props> = (props: Props) => {
               and a testament to our commitment to building a brighter tomorrow.
             </p>
           </div>
-          <div className="w-full flex justify-start items-center gap-x-4 ">
+          <div className="w-full flex flex-wrap justify-start items-center gap-x-4 ">
             <ButtonUI
               actiontext="About Project"
               actionlink={"/about"}
-              className="btn-wide"
+              className=" w-full"
             />
             <DonateButton
               actiontext="Donate Now"

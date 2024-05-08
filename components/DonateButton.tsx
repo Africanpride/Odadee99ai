@@ -1,6 +1,6 @@
 // Donation Process starts from here.
 import React, { useState } from "react";
-import { sourceCodePro400 } from "@/styles/fonts";
+import { sourceCodePro400 } from "@/utils/styles/fonts";
 
 type Props = {
   actiontext?: string;
@@ -28,7 +28,7 @@ const DonateButton: React.FC<Props> = (props: Props) => {
     <div>
 
       <button className={`btn ${props.smallSize ? 'btn-xs' : 'btn-sm md:btn-md'} w-auto hover:btn-info  btn-primary  
-        flex justify-center items-center ${props.className}`}
+        flex justify-center rounded-tr-2xl rounded-bl-2xl px-2 items-center ${props.className}`}
         
         onClick={openModal}
       >

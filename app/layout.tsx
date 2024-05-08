@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
-import { sourceCodePro400, inter } from "@/styles/fonts";
+import { sourceCodePro400, inter } from "@/utils/styles/fonts";
 import "./globals.css";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
+import PrelineScript from "@/components/PrelineScript";
+
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -14,11 +16,15 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" suppressHydrationWarning={true}>
-      <body className={`${sourceCodePro400.className}`}>
+      <body
+        className={`${sourceCodePro400.className} overflow-x-hidden relative  bg-base-100  `}
+      >
         <NavBar />
         {children}
+
         <Footer />
       </body>
+      <PrelineScript />
     </html>
   );
 }

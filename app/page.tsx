@@ -1,7 +1,9 @@
-import InfiniteLogos from "@/components/backup/sections/infinitelogos";
-import InfinityImage from "@/components/InfinityImage";
+
+import FAQS from "@/components/FAQS";
+import MiddleStats from "@/components/MiddleStats";
 import { Movement } from "@/components/movement";
 import Newsletter from "@/components/Newsletter";
+import ProjectBreakdown from "@/components/ProjectBreakdown";
 import QuoteAI from "@/components/QuoteAI";
 import SectionDisplay from "@/components/SectionDisplay";
 import SectionHead from "@/components/SectionHead";
@@ -12,6 +14,10 @@ export default function Home() {
     <div>
       <SectionHead />
       <SectionDisplay />
+      <ProjectBreakdown />
+      
+      {/* <MiddleStats /> */}
+      <FAQS />
       <Movement />
       {/* <InfinityImage /> */}
       {/* <main className="flex min-h-screen flex-col items-center justify-center p-24">
@@ -19,6 +25,7 @@ export default function Home() {
       </main> */}
       <QuoteAI />
       <Newsletter />
+
     </div>
   );
 }
