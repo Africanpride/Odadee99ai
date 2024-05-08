@@ -62,7 +62,7 @@ const NavBar = () => {
         <div className="text-white">Menu</div>
       </div>
       <div className="navbar-center">
-        <TextLogo /> <span className="text-red-500">{theme}</span>
+        <TextLogo /> 
       </div>
       <div className="navbar-end">
         <div className="flex justify-end items-center gap-x-2 ">
