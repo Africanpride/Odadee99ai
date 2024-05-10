@@ -50,9 +50,9 @@ const Footer = () => {
 				</div>
 			</nav>
 			<aside>
-				<p>
+				<p className="capitalize">
 					Copyright &copy; {currentYear} &mdash; All right reserved.{" "}
-					&#10072; <Link href={"/"}>www.Odadee99ai.net</Link>
+					&#10072; <Link className="lowercase " href={"/"}>www.Odadee99ai.net</Link>
 				</p>
 			</aside>
 		</footer>

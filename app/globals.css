@@ -4,7 +4,14 @@
 
 @import url(../utils/styles/animations.css);
 
-
+/* html tag that */
+html {
+  line-height: 19.2px;
+  vertical-align: baseline;
+  letter-spacing: -0.48px;
+  word-spacing: 0px;
+  font-size: 16px;
+}
 
 .about-wrap {
   grid-column-gap: 24px;
@@ -81,7 +88,6 @@
   line-height: 1;
 }
 
-
 .primary-btn {
   background-color: var(--black);
   color: var(--white);
@@ -96,7 +102,7 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 100%;
-  transition: background-position .3s, color .3s, background-color .3s;
+  transition: background-position 0.3s, color 0.3s, background-color 0.3s;
 }
 
 .primary-btn:hover {

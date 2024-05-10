@@ -14,16 +14,16 @@ export default function Home() {
     <div>
       <SectionHead />
       <SectionDisplay />
+      <QuoteAI />
       <ProjectBreakdown />
+      <Movement />
       
       {/* <MiddleStats /> */}
-      <FAQS />
-      <Movement />
+      {/* <FAQS /> */}
       {/* <InfinityImage /> */}
       {/* <main className="flex min-h-screen flex-col items-center justify-center p-24">
         full screen rendering ....
       </main> */}
-      <QuoteAI />
       <Newsletter />
 
     </div>

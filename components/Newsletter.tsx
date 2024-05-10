@@ -11,6 +11,7 @@ import { MagnetIcon, Mail, Mails, User } from "lucide-react";
 import ButtonUI from "./ButtonUI";
 import Link from "next/link";
 import Image from "next/image";
+import Hourglass from "@/utils/Hourglass";
 
 type Props = {};
 
@@ -127,12 +128,7 @@ const Newsletter: React.FC<Props> = () => {
               objectPosition="center"
               className="rounded-3xl"
             />
-            <span className="absolute top-3 right-3 ">
-              <div className="hourglass">
-                <div className="half" />
-                <div className="half" />
-              </div>
-            </span>
+            <Hourglass />
           </div>
           <div
             className={`${bebas.className} bg-yellow-500 text-7xl  p-2 rounded-3xl text-white `}

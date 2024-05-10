@@ -1,3 +1,4 @@
+import { inter } from "@/utils/styles/fonts";
 import React from "react";
 
 interface Props {
@@ -12,17 +13,17 @@ const QuoteAI: React.FC<Props> = ({
 	title = "CEO, Nvidia",
 }) => {
 	return (
-		<div className='bg-black'>
+		<div className='bg-base-200 '>
 			<div className='max-w-7xl px-4 lg:px-8 py-12 lg:py-24 mx-auto'>
-				<blockquote className='max-w-4xl mx-auto'>
+				<blockquote className='max-w-5xl mx-auto'>
 					<p className='mb-6 md:text-lg'>
-						<span className='font-semibold text-yellow-500'>
+						<span className='font-semibold text-yellow-400'>
 							{name},
 						</span>{" "}
 						<span className='text-neutral-500'>{title}</span>
 					</p>
 
-					<p className='text-xl sm:text-2xl md:text-3xl md:leading-normal text-white  '>
+					<p className={`${ inter.className } font-extrabold text-xl sm:text-2xl md:text-[40px] md:leading-tight text-base-content-100 `}>
 						{text}
 					</p>
 
