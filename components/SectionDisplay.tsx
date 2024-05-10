@@ -19,7 +19,7 @@ type Props = {
   title?: string; // Optional string prop with default value
 };
 
-const SectionDisplay: React.FC<Props> = (props: Props) => {
+const SectionIntro: React.FC<Props> = (props: Props) => {
   return (
     <section className="p-2 md:p-8 md:pt-0.5 md:py-24 bg-base-100 overflow-hidden  ">
       <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-8 gap-4 h-auto ">
@@ -73,4 +73,4 @@ const SectionDisplay: React.FC<Props> = (props: Props) => {
   );
 };
 
-export default SectionDisplay;
+export default SectionIntro;

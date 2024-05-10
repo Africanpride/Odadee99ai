@@ -5,6 +5,7 @@ import { Movement } from "@/components/movement";
 import Newsletter from "@/components/Newsletter";
 import ProjectBreakdown from "@/components/ProjectBreakdown";
 import QuoteAI from "@/components/QuoteAI";
+import SectionIntro from "@/components/SectionDisplay";
 import SectionDisplay from "@/components/SectionDisplay";
 import SectionHead from "@/components/SectionHead";
 import Image from "next/image";
@@ -13,7 +14,7 @@ export default function Home() {
   return (
     <div>
       <SectionHead />
-      <SectionDisplay />
+      <SectionIntro />
       <QuoteAI />
       <ProjectBreakdown />
       <Movement />

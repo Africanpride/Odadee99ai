@@ -28,7 +28,7 @@ const ProjectBreakdownLi = (props: Props) => {
         <div>{props.icon ? props.icon : <Griddy />}</div>
       </div>
       <div>
-        <h3 className="mt-6 font-semibold text-lg  ">
+        <h3 className={`${ibm_plex_sans_condense.className} mt-6 font-semibold text-lg`}>
           {props.title || "Empowering students for AI future."}
         </h3>
         <p

@@ -70,7 +70,6 @@ const ProjectBreakdown = () => {
             maintitle={vision.maintitle}
             title={vision.title}
             description={vision.description}
-            icon={<Hourglass />}
             />
           <ProjectBreakdownLi 
             maintitle={how.maintitle}
@@ -87,7 +86,6 @@ const ProjectBreakdown = () => {
             maintitle={vision.maintitle}
             title={vision.title}
             description={vision.description}
-            icon={<Hourglass />}
             />
           <ProjectBreakdownLi 
             maintitle={how.maintitle}

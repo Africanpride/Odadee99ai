@@ -121,7 +121,25 @@ const Newsletter: React.FC<Props> = () => {
             className={`${bebas.className} text-7xl leading-tighter p-2 rounded-3xl relative  `}
           >
             <Image
-              src={"/images/brain-cells.jpg"}
+              src={"/images/launch.jpg"}
+              alt="Presec Legon AI Laboratory"
+              layout="fill"
+              objectFit="cover"
+              objectPosition="center"
+              className="rounded-3xl"
+            />
+            <Hourglass />
+            {/* <p
+              className={`${bebas.className} absolute bottom-4 left-4 text-2xl text-white `}
+            >
+              Nurturing a Heritage of Education and Guidance
+            </p> */}
+          </div>
+          <div
+            className={`${bebas.className} text-7xl leading-tighter p-2 rounded-3xl relative  `}
+          >
+            <Image
+              src={"/images/next2.jpg"}
               alt="Presec Legon AI Laboratory"
               layout="fill"
               objectFit="cover"
@@ -130,7 +148,7 @@ const Newsletter: React.FC<Props> = () => {
             />
             <Hourglass />
           </div>
-          <div
+          {/* <div
             className={`${bebas.className} bg-yellow-500 text-7xl  p-2 rounded-3xl text-white `}
           >
             <div className="leading-snug ">
@@ -138,7 +156,7 @@ const Newsletter: React.FC<Props> = () => {
               <div>BEBAS</div>
             </div>
 
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
