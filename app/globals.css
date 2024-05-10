@@ -13,6 +13,14 @@ html {
   font-size: 16px;
 }
 
+.social-names {
+  line-height: 54px;
+  vertical-align: baseline;
+  letter-spacing: -4.8px;
+  word-spacing: 0px;
+  font-size: 60px;
+}
+
 .about-wrap {
   grid-column-gap: 24px;
   display: flex;

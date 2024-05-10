@@ -9,7 +9,7 @@ type Props = {
 
 const List = (props: Props) => {
   return (
-    <ul className={`divide-y ${props.color ? props.color : 'divide-slate-100'}`}>
+    <ul className={`divide-y ${props.color ? props.color : 'divide-slate-500/20'}`}>
       {props.children}
     </ul>
   )
