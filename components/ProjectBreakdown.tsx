@@ -26,7 +26,7 @@ const vision = {
 };
 const how = {
   maintitle: `Strategy & Process`,
-  title: `The &apos;How&apos; of the Vision `,
+  title: `The How of the Vision `,
   description: `The AI Lab will be built through corporate sponsorships, both monetary and in-kind donations. Events, such as fundraisers and mentorship sessions, will engage alumni and the community to support the project.`,
 };
 const mission = {
@@ -77,22 +77,7 @@ const ProjectBreakdown = () => {
             description={how.description}
 
           />
-          {/* <ProjectBreakdownLi
-            maintitle={why.maintitle}
-            title={why.title}
-            description={why.description}
-          />
-          <ProjectBreakdownLi
-            maintitle={vision.maintitle}
-            title={vision.title}
-            description={vision.description}
-            />
-          <ProjectBreakdownLi 
-            maintitle={how.maintitle}
-            title={how.title}
-            description={how.description}
 
-          /> */}
         </ul>
       </div>
     </section>

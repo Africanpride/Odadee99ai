@@ -1,6 +1,8 @@
 // Donation Process starts from here.
 import React, { useState } from "react";
 import { sourceCodePro400 } from "@/utils/styles/fonts";
+import { CircleChevronRight } from "lucide-react";
+
 
 type Props = {
   actiontext?: string;
@@ -33,18 +35,19 @@ const DonateButton: React.FC<Props> = (props: Props) => {
         onClick={openModal}
       >
         <span className={`${sourceCodePro400.className} font-normal`}>{props.actiontext || "Donate Now"}</span>
-        <span>{props.children}</span>
+        <span className="">{props.icon || <CircleChevronRight />}</span>
+
       </button>
 
       {showModal && (
         <dialog id="my_modal_1" className="modal bg-base-content  p-4 md:p-0" open>
           <div className="modal-box   max-w-5xl p-4">
             <h3 className="font-bold text-lg">
-              {props.title || "Odadee99AI Donation"}
+              {props.title || "Odadee99AI Donation Options"}
             </h3>
-            <p className="py-4">
+            <div className="py-4">
               {props.children || "Link to Payment API (Paypal & Stripe)"}
-            </p>
+            </div>
             <div className="modal-action">
               <button className="btn" onClick={closeModal}>
                 Close

@@ -12,13 +12,14 @@ import {
 import ImageGrid from "./ImageGrid";
 import ButtonUI from "./ButtonUI";
 import DonateButton from "./DonateButton";
+import DonateOptions from "@/utils/DonateOptions";
 
 const titletext = `Empowering Tomorrow's Innovators`;
 
 type Props = {
   title?: string; // Optional string prop with default value
-  introText?: JSX.Element | null;
-  introBlock?: React.ReactNode;
+  introText?: string | null;
+  introBlock?: string | null;
 };
 
 const SectionIntro: React.FC<Props> = (props: Props) => {
@@ -68,7 +69,9 @@ const SectionIntro: React.FC<Props> = (props: Props) => {
             <DonateButton
               actiontext="Donate Now"
               className="btn-outline btn-info text-lg font-normal md:text-lg"
-            />
+            >
+              <DonateOptions />
+            </DonateButton>
           </div>
         </div>
         <div className="flex  gap-4 bg-none   overflow-hidden  rounded-3xl ">

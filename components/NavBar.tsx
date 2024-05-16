@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import { Sun, Moon } from "lucide-react";
 import MainMenu from "./MainMenu";
 import DonateButton2 from "../utils/DonateButton2";
+import DonateOptions from "@/utils/DonateOptions";
 
 const NavBar = () => {
   type Theme = "lofi" | "black";
@@ -31,10 +32,10 @@ const NavBar = () => {
     <div className="navbar bg-primary dark:bg-secondary z-10">
       <div className="navbar-start">
         <div className="dropdown z-50">
-          <div 
-            tabIndex={0} 
-            role="button" 
-            className="btn btn-ghost btn-circle" 
+          <div
+            tabIndex={0}
+            role="button"
+            className="btn btn-ghost btn-circle"
             onClick={toggleMenu}
           >
             <svg
@@ -62,7 +63,9 @@ const NavBar = () => {
       <div className="navbar-end">
         <div className="flex justify-end items-center gap-x-2">
           <div>
-            <DonateButton2 smallSize={true} />
+            <DonateButton2 smallSize={true}>
+              <DonateOptions />
+            </DonateButton2>
           </div>
           <div className="hidden md:inline-block">
             <label className="swap swap-rotate w-12 h-12 text-xl">

@@ -1,7 +1,8 @@
-"use client"
+"use client";
 import React from "react";
 import ButtonUI from "./ButtonUI";
 import { poppins, playfair_display } from "@/utils/styles/fonts";
+import DonateButton from "./DonateButton";
 
 type Props = {
   text?: string;
@@ -18,20 +19,27 @@ const SectionHead = (props: Props) => {
         className={`${poppins.className} text-blue-600  pt-44 font-extrabold leading-[3rem]  text-[30px] md:text-[5.5rem]  `}
       >
         {props.description ? (
-        props.description
+          props.description
         ) : (
           <React.Fragment>
             Fostering A Legacy of{" "}
-            <span className={`${playfair_display.className} text-gray-400`}>Learning</span>{" "}
+            <span className={`${playfair_display.className} text-gray-400`}>
+              Learning
+            </span>{" "}
             and{" "}
-            <span className={`${playfair_display.className}  text-gray-400`}>Leadership</span>
+            <span className={`${playfair_display.className}  text-gray-400`}>
+              Leadership
+            </span>
           </React.Fragment>
         )}
       </div>
-      <ButtonUI
+      <div className="py-4">
+        <DonateButton />
+      </div>
+      {/* <ButtonUI
         actionlink={props.link || "/"}
         actiontext={props.actionText || "Donate Now"}
-      />
+      /> */}
 
       <div
         className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
