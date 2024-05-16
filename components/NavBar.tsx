@@ -1,47 +1,42 @@
 "use client";
-import React from "react";
 import TextLogo from "./TextLogo";
-import { useState, useEffect } from "react";
-import Image from "next/image";
+import React, { useState, useEffect } from "react";
 import { Sun, Moon } from "lucide-react";
 import MainMenu from "./MainMenu";
-import DonateButton from "./DonateButton";
+import DonateButton2 from "../utils/DonateButton2";
 
 const NavBar = () => {
-  // Define the type for the theme (Saving our eyes is necessary)
   type Theme = "lofi" | "black";
 
-  // Initialize state with theme from local storage if available, otherwise we set lofi theme
   const [theme, setTheme] = useState<Theme>(
-    typeof window !== "undefined" &&
-      localStorage.getItem("theme") === "black"
+    typeof window !== "undefined" && localStorage.getItem("theme") === "black"
       ? "black"
       : "lofi"
   );
 
-  // Update state on toggle
   const handleToggle: React.ChangeEventHandler<HTMLInputElement> = (e) => {
-    if (e.target.checked) {
-      setTheme("black");
-    } else {
-      setTheme("lofi");
-    }
+    setTheme(e.target.checked ? "black" : "lofi");
   };
 
-  // set theme state in localstorage on mount & also update localstorage on state change
   useEffect(() => {
-    localStorage.setItem("theme", theme as string);
-    const localTheme = localStorage.getItem("theme");
-    // add custom data-theme attribute to html tag required to update theme using DaisyUI
-    // document.querySelector("html").setAttribute("data-theme", localTheme);
-    document.documentElement.setAttribute("data-theme", localTheme as string);
+    localStorage.setItem("theme", theme);
+    document.documentElement.setAttribute("data-theme", theme);
   }, [theme]);
 
+  const [isOpen, setIsOpen] = useState(false);
+  const toggleMenu = () => setIsOpen(!isOpen);
+  const closeMenu = () => setIsOpen(false);
+
   return (
-    <div className="navbar bg-primary dark:bg-secondary  z-10">
-      <div className="navbar-start ">
-        <div className="dropdown z-50 ">
-          <div tabIndex={0} role="button" className="btn btn-ghost btn-circle ">
+    <div className="navbar bg-primary dark:bg-secondary z-10">
+      <div className="navbar-start">
+        <div className="dropdown z-50">
+          <div 
+            tabIndex={0} 
+            role="button" 
+            className="btn btn-ghost btn-circle" 
+            onClick={toggleMenu}
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"
@@ -57,28 +52,25 @@ const NavBar = () => {
               />
             </svg>
           </div>
-          <MainMenu />
+          <MainMenu isOpen={isOpen} closeMenu={closeMenu} />
         </div>
         <div className="text-white">Menu</div>
       </div>
       <div className="navbar-center">
-        <TextLogo /> 
+        <TextLogo />
       </div>
       <div className="navbar-end">
-        <div className="flex justify-end items-center gap-x-2 ">
-		<div>
-			<DonateButton className="btn-outline btn-info uppercase text-xs" smallSize={true} />
-		</div>
-
-          <div className="hidden md:inline-block ">
+        <div className="flex justify-end items-center gap-x-2">
+          <div>
+            <DonateButton2 smallSize={true} />
+          </div>
+          <div className="hidden md:inline-block">
             <label className="swap swap-rotate w-12 h-12 text-xl">
               <input
                 type="checkbox"
                 onChange={handleToggle}
-                // show toggle image based on localstorage theme
-                checked={theme === "lofi" ? false : true}
+                checked={theme === "black"}
               />
-              {/* lofi theme sun image */}
               {theme === "black" ? (
                 <span className="text-gray-100 w-6 h-6">
                   <Moon size={24} />

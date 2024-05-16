@@ -7,6 +7,7 @@ import {
 } from "@/utils/styles/fonts";
 import { ChevronRightIcon } from "lucide-react";
 import Griddy from "@/utils/Griddy";
+import Link from "next/link";
 
 type Props = {
   maintitle?: string | null;
@@ -40,15 +41,16 @@ const ProjectBreakdownLi = (props: Props) => {
           collaboration to shape tomorrow's leaders and innovators.`}
         </p>
       </div>
-      <div className="w-full mt-2 text-right  flex justify-end items-center ">
-        <div className="bg-blue-500 rounded-full relative flex items-center justify-end">
+      <Link href={'/about'} className="w-full mt-2 text-right  flex justify-end items-center text-xs ">
+       <div className="px-2"> Read More</div>
+        <div className="bg-blue-500 rounded-full relative flex items-center justify-end"> 
           {props.iconbottom ? (
             props.iconbottom
           ) : (
             <ChevronRightIcon className="text-white" />
           )}
         </div>
-      </div>
+      </Link>
     </li>
   );
 };

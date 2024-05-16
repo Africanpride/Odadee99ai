@@ -1,5 +1,5 @@
 import { Inter, Poppins, Source_Sans_3, Inter_Tight, IBM_Plex_Sans_Condensed, Playfair_Display, Bebas_Neue } from "next/font/google";
-
+import localFont from 'next/font/local'
 type Props = {
   subset:  string | string[];
   weight: string | string[];
@@ -7,6 +7,9 @@ type Props = {
   display: string | string[];
 
 }
+
+const superbold = localFont({ src: '../localfonts/bold.ttf' })
+
 // define your variable fonts
 const bebas = Bebas_Neue({ weight: ["400"], subsets:["latin"], style:["normal"] });
 const inter = Inter({ subsets: ["latin"] });
@@ -21,4 +24,4 @@ const inter_tight = Inter_Tight({
 const sourceCodePro400 = Source_Sans_3({  subsets: ["latin"], weight: "400" });
 const sourceCodePro700 = Source_Sans_3({ subsets: ["latin"],  weight: "700" });
 // define a custom local font where GreatVibes-Regular.ttf is stored in the styles folder
-export { inter, inter_tight, poppins, sourceCodePro400, sourceCodePro700, ibm_plex_sans_condense, playfair_display, bebas };
+export { inter, inter_tight, poppins, sourceCodePro400, sourceCodePro700, ibm_plex_sans_condense, playfair_display, bebas, superbold };

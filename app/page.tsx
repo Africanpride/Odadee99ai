@@ -1,12 +1,13 @@
 
+import ArticilesExcerpts from "@/components/ArticilesExcerpts";
 import FAQS from "@/components/FAQS";
 import MiddleStats from "@/components/MiddleStats";
 import { Movement } from "@/components/movement";
 import Newsletter from "@/components/Newsletter";
 import ProjectBreakdown from "@/components/ProjectBreakdown";
 import QuoteAI from "@/components/QuoteAI";
-import SectionIntro from "@/components/SectionDisplay";
-import SectionDisplay from "@/components/SectionDisplay";
+import SectionIntro from "@/components/SectionIntro";
+import SectionDisplay from "@/components/SectionIntro";
 import SectionHead from "@/components/SectionHead";
 import Image from "next/image";
 
@@ -16,6 +17,7 @@ export default function Home() {
       <SectionHead />
       <SectionIntro />
       <QuoteAI />
+      <ArticilesExcerpts />
       <ProjectBreakdown />
       <Movement />
       

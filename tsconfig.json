@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
       "target": "es5",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": ["dom", "dom.iterable", "esnext", "es2016"],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -19,7 +19,9 @@
       }
     ],
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./*"],      
+      "@/fonts": ["./utils/styles/fonts"]
+
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/loading.js", "styles/fonts.tss"],

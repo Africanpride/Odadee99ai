@@ -1,30 +1,52 @@
 import List from "@/components/List";
+import ListItem from "@/components/ListItem";
 import { bebas, inter, poppins } from "@/utils/styles/fonts";
-import { ChevronRightSquareIcon } from "lucide-react";
+import {
+  ArrowUpRight,
+  ArrowUpRightFromCircle,
+  ArrowUpRightFromSquare,
+  ChevronRightCircleIcon,
+  ChevronRightSquareIcon,
+} from "lucide-react";
+import Link from "next/link";
 import React from "react";
 
 type Props = {};
 
 const Contact = (props: Props) => {
+  // List of social media links for Odade399AI
+  const socials = [
+    {
+      platform: "TikTok",
+      link: "https://www.tiktok.com/",
+      description:
+        "Our favorite social network, we use the others out of obligation",
+    },
+    {
+      platform: "Instagram",
+      link: "https://www.instagram.com/",
+      description: "Capture and share the world’s moments",
+    },
+    {
+      platform: "Facebook",
+      link: "https://www.facebook.com/",
+      description: "Connect with friends, family and other people you know",
+    },
+    {
+      platform: "YouTube",
+      link: "https://www.youtube.com/",
+      description: "Connect with friends, family and other people you know",
+    },
+  ];
   return (
     <React.Fragment>
       <List>
-        <li className="p-4 md:p-6 lg:p-4 xl:p-6">
-          <div className="bg-green-500  space-x-4 items-start sm:space-x-6 lg:space-x-4 xl:space-x-6 flex justify-between ">
-            <div className="number self-center	">1</div>
-            <div className={`${inter.className} social-names font-bold `}>Instagram</div>
-            <div className="description self-center text-left bg-yellow-500 ">Get in touch </div>
-            <div className="self-center "><ChevronRightSquareIcon /></div>
-          </div>
-        </li>
-        <li>123</li>
-        <li>123</li>
-        <li>123</li>
-        <li>123</li>
-        <li>123</li>
+      {socials.map((social, index) => (
+        <ListItem key={index} link={social.link} platform={social.platform} number={index+1}  />
+      ))}
       </List>
     </React.Fragment>
-  );
+  ); 
 };
 
 export default Contact;

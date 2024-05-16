@@ -16,23 +16,23 @@ const why = {
   title: `Empowering students for AI future.`,
   description: `We are building an AI lab to equip students with essential skills for
   success in an AI-centric world, fostering curiosity, creativity, and
-  collaboration to shape tomorrow's leaders and innovators.`,
+  collaboration to shape tomorrow&apos;s leaders and innovators.`,
 };
 
 const vision = {
   maintitle: `Our Vision`,
   title: `Setting Sights on the Future`,
-  description: `The vision for the AI lab's impact is to create a lively learning space where students explore the possibilities of AI, realize their full capabilities, and harness AI to create positive change in their lives and communities.`,
+  description: `The vision for the AI lab&apos;s impact is to create a lively learning space where students explore the possibilities of AI, realize their full capabilities, and harness AI to create positive change in their lives and communities.`,
 };
 const how = {
   maintitle: `Strategy & Process`,
-  title: `The 'How' of the Vision `,
+  title: `The &apos;How&apos; of the Vision `,
   description: `The AI Lab will be built through corporate sponsorships, both monetary and in-kind donations. Events, such as fundraisers and mentorship sessions, will engage alumni and the community to support the project.`,
 };
 const mission = {
   maintitle: `Our Vision`,
   title: `Setting Sights on the Future`,
-  description: `The vision for the AI lab's impact is to create a lively learning space where students explore the possibilities of AI, realize their full capabilities, and harness AI to create positive change in their lives and communities.`,
+  description: `The vision for the AI lab&apos;s impact is to create a lively learning space where students explore the possibilities of AI, realize their full capabilities, and harness AI to create positive change in their lives and communities.`,
 };
 const what = "";
 const who = "";
@@ -47,13 +47,13 @@ const ProjectBreakdown = () => {
       <div className="lg:px-8 mx-auto w-full">
         <div className="mx-auto max-w-2xl sm:text-center">
           <h2
-            className={` ${ibm_plex_sans_condense.className} text-4xl font-medium tracking-tight`}
+            className={` ${ibm_plex_sans_condense.className} text-2xl md:text-4xl font-medium tracking-tight`}
           >
             AI Lab: Empowered Future
           </h2>
           <p className={` ${inter.className} mt-2 text-xl`}>
             The new AI lab is a launchpad for future leaders! Students will
-            explore AI's potential, collaborate, and make a positive impact on
+            explore AI&apos;s potential, collaborate, and make a positive impact on
             the world.
           </p>
         </div>
@@ -77,7 +77,7 @@ const ProjectBreakdown = () => {
             description={how.description}
 
           />
-          <ProjectBreakdownLi
+          {/* <ProjectBreakdownLi
             maintitle={why.maintitle}
             title={why.title}
             description={why.description}
@@ -92,7 +92,7 @@ const ProjectBreakdown = () => {
             title={how.title}
             description={how.description}
 
-          />
+          /> */}
         </ul>
       </div>
     </section>

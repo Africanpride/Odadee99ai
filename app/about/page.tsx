@@ -1,25 +1,32 @@
+import ArticilesExcerpts from "@/components/ArticilesExcerpts";
+import SectionIntro2 from "@/components/SectionIntro2";
+import SectionIntro from "@/components/SectionIntro";
+import SectionHead from "@/components/SectionHead";
 import React from "react";
+import FAQS from "../../components/FAQS";
+
+const title = `Reunited with a shared vision`;
+const introBlock = (
+  <div>
+    After 25 years of pursuing our individual paths, we have reunited with a
+    shared vision: to leave a lasting legacy at our Alma mater. Our objective is
+    to construct and equip an Artificial Intelligence lab &mdash;
+    <span  data-theme="retro" className="font-bold text-secondary px-4">Presec 1999 eXperience Centre</span> &mdash; that will
+    empower both current and future students, providing them with the tools and
+    resources to thrive in an ever-evolving world.
+  </div>
+);
+const introText = `Driven by our commitment to giving back, we are embarking on this ambitious project as a way to honour our alma mater and the pivotal role it played in shaping our lives. Our dedication knows no bounds as we work tirelessly to ensure the project becomes a beacon of innovation and excellence within the school and its surrounding communities.`
 
 const page = () => {
-	return (
-		<div className='flex flex-col gap-8 text-left' data-theme="luxury">
-			<h1 className='block font-sans text-5xl antialiased font-semibold leading-tight tracking-normal text-accent  '>
-				Material Tailwind
-			</h1>
-			<h1 className='block font-sans text-5xl antialiased font-semibold leading-tight tracking-normal text-blue-gray-900'>
-				Material Tailwind
-			</h1>
-			<h1 className='block font-sans text-5xl antialiased font-semibold leading-tight tracking-normal text-blue-500'>
-				Material Tailwind
-			</h1>
-			<h1 className='block font-sans text-5xl antialiased font-semibold leading-tight tracking-normal text-red-500'>
-				Material Tailwind
-			</h1>
-			<h1 className='block font-sans text-5xl antialiased font-semibold leading-tight tracking-normal text-green-500'>
-				Material Tailwind
-			</h1>
-		</div>
-	);
+  return (
+    <React.Fragment>
+      <SectionHead />
+      <SectionIntro2 title={title} introBlock={introBlock} introText={introText} />
+      <FAQS />
+      <SectionIntro />
+    </React.Fragment>
+  );
 };
 
 export default page;

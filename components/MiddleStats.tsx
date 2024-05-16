@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 type Props = {};
@@ -43,17 +44,23 @@ const MiddleStats = (props: Props) => {
               {/* Stats */}
               <div className="relative text-center first:before:hidden before:absolute before:-top-full sm:before:top-1/2 before:start-1/2 sm:before:-start-6 before:w-px before:h-20 before:bg-neutral-800 before:rotate-[60deg] sm:before:rotate-12 before:transform sm:before:-translate-y-1/2 before:-translate-x-1/2 sm:before:-translate-x-0 before:mt-3.5 sm:before:mt-0">
                 <div className="flex justify-center items-center -space-x-5">
-                  <img
+                  <Image
+                    width={500}
+                    height={500}
                     className="relative z-[2] flex-shrink-0 size-8 rounded-full border-[3px] border-neutral-800"
                     src="https://images.unsplash.com/photo-1601935111741-ae98b2b230b0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80"
                     alt="Image Description"
                   />
-                  <img
+                  <Image
+                    width={500}
+                    height={500}
                     className="relative z-[1] flex-shrink-0 size-8 rounded-full border-[3px] border-neutral-800 -mt-7"
                     src="https://images.unsplash.com/photo-1570654639102-bdd95efeca7a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80"
                     alt="Image Description"
                   />
-                  <img
+                  <Image
+                    width={500}
+                    height={500}
                     className="relative flex-shrink-0 size-8 rounded-full border-[3px] border-neutral-800"
                     src="https://images.unsplash.com/photo-1679412330254-90cb240038c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2.5&w=320&h=320&q=80"
                     alt="Image Description"

@@ -1,216 +1,93 @@
 "use client";
+import { bebas } from "@/utils/styles/fonts";
 import React, { useEffect } from "react";
 const faqList = [
-    {
-      question: "How do I know if a product is available in boutiques?",
-      answer: "Remember you can query the status of your orders any time in My orders in the My account section. If you are not registered at Mango.com, you can access directly in the Orders section. In this case, you will have to enter your e-mail address and order number."
-    },
-    {
-      question: "How can I find the prices or get other information about Chanel products?",
-      answer: "You can find prices and other information about Chanel products on their official website or by visiting Chanel boutiques."
-    },
-  ];
+  {
+    question: "How do I know if a product is available in boutiques?",
+    answer:
+      "Remember you can query the status of your orders any time in My orders in the My account section. If you are not registered at Mango.com, you can access directly in the Orders section. In this case, you will have to enter your e-mail address and order number.",
+  },
+  {
+    question:
+      "How can I find the prices or get other information about Chanel products?",
+    answer:
+      "You can find prices and other information about Chanel products on their official website or by visiting Chanel boutiques.",
+  },
+];
 const FAQS: React.FC = () => {
   return (
-    <div className="flex min-h-dvh flex-col items-center justify-center p-4 sm:p-12 relative isolate overflow-hidden  px-6 py-24 sm:py-32  ">
-       
-      
-      <div className="absolute inset-0 -z-10 overflow-hidden">
-        <svg
-          className="absolute left-[max(50%,25rem)] top-0 h-[64rem] w-[128rem] -translate-x-1/2 stroke-gray-200 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]"
-          aria-hidden="true"
-        >
-          <defs>
-            <pattern
-              id="e813992c-7d03-4cc4-a2bd-151760b470a0"
-              width={200}
-              height={200}
-              x="50%"
-              y={-1}
-              patternUnits="userSpaceOnUse"
-            >
-              <path d="M100 200V.5M.5 .5H200" fill="none" />
-            </pattern>
-          </defs>
-          <svg x="50%" y={-1} className="overflow-visible fill-gray-50">
-            <path
-              d="M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M-300.5 600h201v201h-201Z"
-              strokeWidth={0}
-            />
-          </svg>
-          <rect width="100%" height="100%" strokeWidth={0} fill="url(#e813992c-7d03-4cc4-a2bd-151760b470a0)" />
-        </svg>
-      </div>
-      <div className="hs-accordion-group w-full">
-        <div
-          className="hs-accordion active bg-white border -mt-px first:rounded-t-lg last:rounded-b-lg dark:bg-gray-950 dark:border-gray-700"
-          id="hs-bordered-heading-one"
-        >
-          <button
-            className="hs-accordion-toggle hs-accordion-active:text-blue-600 inline-flex items-center gap-x-3 w-full font-semibold text-start text-gray-800 py-4 px-5 hover:text-gray-500 disabled:opacity-50 disabled:pointer-events-none dark:hs-accordion-active:text-blue-500 dark:text-gray-200 dark:hover:text-gray-400 dark:focus:outline-none dark:focus:text-gray-400"
-            aria-controls="hs-basic-bordered-collapse-one"
-          >
-            <svg
-              className="hs-accordion-active:hidden block size-3.5"
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <path d="M5 12h14"></path>
-              <path d="M12 5v14"></path>
-            </svg>
-            <svg
-              className="hs-accordion-active:block hidden size-3.5"
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <path d="M5 12h14"></path>
-            </svg>
-            Accordion #1
-          </button>
-          <div
-            id="hs-basic-bordered-collapse-one"
-            className="hs-accordion-content w-full overflow-hidden transition-[height] duration-300"
-            aria-labelledby="hs-bordered-heading-one"
-          >
-            <div className="pb-4 px-5">
-              <p className="text-gray-800 dark:text-gray-200">
-                <em>This is the third item's accordion body.</em> It is hidden
-                by default, until the collapse plugin adds the appropriate
-                classes that we use to style each element. These classes control
-                the overall appearance, as well as the showing and hiding via
-                CSS transitions.
-              </p>
+    <section className="flex min-h-dvh flex-col items-center justify-center p-4 relative isolate overflow-hidden  md:px-6 py-14   ">
+      <div className=" bg-lightblue">
+        <div className="flex flex-col max-w-6xl mx-auto md:flex-row">
+          <div className="w-full md:mr-8  md:w-1/3 space-y-3">
+            <div className={`${bebas.className} text-5xl font-extrabold leading-9`}>
+              <h2>Frequently-asked questions</h2>
             </div>
+            <p className="text-md text-left">
+            Got questions about the Odadee 99 AI Lab project? We&apos;ve got answers! Explore our FAQs to learn more about the project, its goals, and how you can get involved.
+            </p>
           </div>
-        </div>
-
-        <div
-          className="hs-accordion bg-white border -mt-px first:rounded-t-lg last:rounded-b-lg dark:bg-gray-950 dark:border-gray-700"
-          id="hs-bordered-heading-two"
-        >
-          <button
-            className="hs-accordion-toggle hs-accordion-active:text-blue-600 inline-flex items-center gap-x-3 w-full font-semibold text-start text-gray-800 py-4 px-5 hover:text-gray-500 disabled:opacity-50 disabled:pointer-events-none dark:hs-accordion-active:text-blue-500 dark:text-gray-200 dark:hover:text-gray-400 dark:focus:outline-none dark:focus:text-gray-400"
-            aria-controls="hs-basic-bordered-collapse-two"
-          >
-            <svg
-              className="hs-accordion-active:hidden block size-3.5"
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <path d="M5 12h14"></path>
-              <path d="M12 5v14"></path>
-            </svg>
-            <svg
-              className="hs-accordion-active:block hidden size-3.5"
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <path d="M5 12h14"></path>
-            </svg>
-            Accordion #2
-          </button>
-          <div
-            id="hs-basic-bordered-collapse-two"
-            className="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
-            aria-labelledby="hs-bordered-heading-two"
-          >
-            <div className="pb-4 px-5">
-              <p className="text-gray-800 dark:text-gray-200">
-                <em>This is the second item's accordion body.</em> It is hidden
-                by default, until the collapse plugin adds the appropriate
-                classes that we use to style each element. These classes control
-                the overall appearance, as well as the showing and hiding via
-                CSS transitions.
+          <dl className="w-full md:w-2/3">
+            <dt className="mb-4">
+              <h3 className="text-xl font-semibold">
+                What is the Odadee 99 Year Group Legacy Project?
+              </h3>
+            </dt>
+            <dd className="mb-16">
+              <p>
+                The Odadee 99 Year Group Legacy Project aims to construct and
+                equip an Artificial Intelligence (AI) lab at Presbyterian Boys&apos;
+                High School (Presec - Legon) in Ghana, their alma mater. This
+                lab, named the Presec 1999 eXperience Centre, will empower
+                students with the tools and resources to succeed in an AI-driven
+                world.
               </p>
-            </div>
-          </div>
-        </div>
-
-        <div
-          className="hs-accordion bg-white border -mt-px first:rounded-t-lg last:rounded-b-lg dark:bg-gray-950 dark:border-gray-700"
-          id="hs-bordered-heading-three"
-        >
-          <button
-            className="hs-accordion-toggle hs-accordion-active:text-blue-600 inline-flex items-center gap-x-3 w-full font-semibold text-start text-gray-800 py-4 px-5 hover:text-gray-500 disabled:opacity-50 disabled:pointer-events-none dark:hs-accordion-active:text-blue-500 dark:text-gray-200 dark:hover:text-gray-400 dark:focus:outline-none dark:focus:text-gray-400"
-            aria-controls="hs-basic-bordered-collapse-three"
-          >
-            <svg
-              className="hs-accordion-active:hidden block size-3.5"
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <path d="M5 12h14"></path>
-              <path d="M12 5v14"></path>
-            </svg>
-            <svg
-              className="hs-accordion-active:block hidden size-3.5"
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <path d="M5 12h14"></path>
-            </svg>
-            Accordion #3
-          </button>
-          <div
-            id="hs-basic-bordered-collapse-three"
-            className="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
-            aria-labelledby="hs-bordered-heading-three"
-          >
-            <div className="pb-4 px-5">
-              <p className="text-gray-800 dark:text-gray-200">
-                <em>This is the first item's accordion body.</em> It is hidden
-                by default, until the collapse plugin adds the appropriate
-                classes that we use to style each element. These classes control
-                the overall appearance, as well as the showing and hiding via
-                CSS transitions.
+            </dd>
+            <dt className="mb-4">
+              <h3 className="text-xl font-semibold">
+                When will the AI Lab be completed?
+              </h3>
+            </dt>
+            <dd className="mb-16">
+              <p>
+                The project is scheduled for completion and handover to the
+                school during the Speech and Prize Giving Day in November 2024.
               </p>
-            </div>
-          </div>
+            </dd>
+            <dt className="mb-4">
+              <h3 className="text-xl font-semibold">
+                Who is behind the project?
+              </h3>
+            </dt>
+            <dd className="mb-16">
+              <p>
+                The project is driven by a passionate group of alumni who
+                graduated from Presec - Legon in 1999. They are committed to
+                giving back to their school and fostering a culture of
+                innovation and excellence among future generations of students.
+              </p>
+            </dd>
+            <dt className="mb-4">
+              <h3 className="text-xl font-semibold">
+                How can I support the project?
+              </h3>
+            </dt>
+            <dd className="mb-16">
+              <p>
+                There are two main ways to support the project: - **Monetary
+                Support:** Donations can be made through the provided bank
+                accounts (Cedi and US Dollar) or by reaching out for details on
+                other forms of cash support. - **Non-monetary Support:**
+                Donations of AI and robotics kits, devices, and related
+                equipment are welcome. You can contact the Odadee 99 Year Group
+                via email (odadee99.legacyproject@gmail.com) to inquire about
+                this option.
+              </p>
+            </dd>
+          </dl>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
