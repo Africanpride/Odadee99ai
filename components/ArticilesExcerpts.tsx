@@ -13,7 +13,7 @@ import ImageGrid from "./ImageGrid";
 import ButtonUI from "./ButtonUI";
 import DonateButton from "./DonateButton";
 
-const titletext = `Empowering Tomorrow&apos;s Innovators`;
+const titletext = `Empowering Tomorrow's Innovators`;
 
 type Props = {
   title?: string; // Optional string prop with default value

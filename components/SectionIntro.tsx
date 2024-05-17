@@ -74,7 +74,7 @@ const SectionIntro: React.FC<Props> = (props: Props) => {
             </DonateButton>
           </div>
         </div>
-        <div className="flex  gap-4 bg-none   overflow-hidden  rounded-3xl ">
+        <div className="hidden md:flex  gap-4 bg-none    overflow-hidden  rounded-3xl ">
           <ImageGrid />
         </div>
       </div>

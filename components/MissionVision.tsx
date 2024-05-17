@@ -18,8 +18,8 @@ const MissionVision = (props: Props) => {
   const defaultAnimate = `<div className="pulse hidden md:inline-block"></div>`;
 
   return (
-    <div className=" w-full p-4 md:p-12 ">
-      <article className="relative min-h-auto md:min-h-dvh rounded-3xl  bg-blue-800 md:p-32 w-full flex flex-col justify-center">
+    <div className=" w-full p-4 py-12 md:p-12 ">
+      <article className="relative min-h-auto md:min-h-dvh  p-4 rounded-3xl  bg-blue-800 md:p-32 w-full flex flex-col justify-center">
 
         <div className="flex justify-between items-center">
           <h2
@@ -40,9 +40,9 @@ const MissionVision = (props: Props) => {
           academic excellence continue to be the school’s hallmark.
         </div>
 
-        <ul className="grid grid-cols-1 md:grid-cols-2 mt-4  gap-x-5">
+        <ul className="grid grid-cols-1 md:grid-cols-2 mt-4  gap-5">
           <li className=" h-auto  ">
-            <div className="block h-auto md:h-full rounded-lg border border-white/50 md:p-12 hover:border-gray-500/40 space-y-4">
+            <div className="block h-full md:h-full  p-4  rounded-lg border border-white/50 md:p-12 hover:border-gray-500/40 space-y-4">
               <strong
                 className={`${ibm_plex_sans_condense.className} font-medium text-white text-3xl pb-5`}
               >
@@ -61,14 +61,14 @@ const MissionVision = (props: Props) => {
             </div>
           </li>
           <li className="h-auto  ">
-            <div className="block h-auto md:h-full rounded-lg border border-white/50 md:p-12 hover:border-gray-500/40 space-y-4">
+            <div className="block h-auto  p-4  md:h-full rounded-lg border border-white/50 md:p-12 hover:border-gray-500/40 space-y-4">
               <strong
                 className={`${ibm_plex_sans_condense.className} font-medium text-white text-3xl pb-5`}
               >
                 Mision of the AI Lab
               </strong>
 
-              <p className="mt-1 text-2xl font-medium text-gray-300">
+              <p className="mt-1 text-xl font-medium text-gray-300">
                 Our mission is to inspire curiosity, nurture creativity, and
                 empower students with essential skills for success in an
                 AI-centric world. Through collaborative learning and
