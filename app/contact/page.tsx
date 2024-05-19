@@ -1,5 +1,6 @@
 import List from "@/components/List";
 import ListItem from "@/components/ListItem";
+import SectionHead from "@/components/SectionHead";
 import { bebas, inter, poppins } from "@/utils/styles/fonts";
 import { ArrowUpRight, ArrowUpRightFromCircle, ArrowUpRightFromSquare, ChevronRightCircleIcon, ChevronRightSquareIcon } from "lucide-react";
 import Link from "next/link";
@@ -34,6 +35,7 @@ const Contact = (props: Props) => {
 
   return (
     <React.Fragment>
+      <SectionHead />
       <List>
         {socials.map((social, index) => (
           <ListItem key={index} link={social.link} platform={social.platform} number={index + 1} description={social.description} />

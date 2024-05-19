@@ -3,6 +3,7 @@ import React from "react";
 import ButtonUI from "./ButtonUI";
 import { poppins, playfair_display } from "@/utils/styles/fonts";
 import DonateButton from "./DonateButton";
+import { useRouter, usePathname } from 'next/navigation';
 
 type Props = {
   text?: string;
@@ -11,12 +12,17 @@ type Props = {
   description?: JSX.Element | null;
   actionText?: string | null;
 };
+
 const SectionHead = (props: Props) => {
+  const router = useRouter();
+  const pathName = usePathname();
+  const routeName = pathName.startsWith('/') ? pathName.slice(1) : pathName;
+
   return (
-    <section className="relative h-auto md:h-[70dvh] overflow-x-hidden p-4 md:pb-4 md:pt-8 md:px-8 flex flex-col items-start justify-end ">
+    <section className="relative h-auto md:h-[70dvh] overflow-x-hidden p-4 md:pb-4 md:pt-8 md:px-8 flex flex-col items-start justify-end overflow-hidden ">
       <div
         style={{ lineHeight: 0.8 }}
-        className={`${poppins.className} text-blue-600  pt-44 font-extrabold leading-[3rem]  text-[30px] md:text-[5.5rem]  `}
+        className={`${poppins.className} text-blue-600 pt-44 font-extrabold leading-[3rem] text-[30px] md:text-[5.5rem]`}
       >
         {props.description ? (
           props.description
@@ -27,7 +33,7 @@ const SectionHead = (props: Props) => {
               Learning
             </span>{" "}
             and{" "}
-            <span className={`${playfair_display.className}  text-gray-400`}>
+            <span className={`${playfair_display.className} text-gray-400`}>
               Leadership
             </span>
           </React.Fragment>
@@ -52,6 +58,11 @@ const SectionHead = (props: Props) => {
               "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
           }}
         />
+      </div>
+      <div data-theme="dark" className={`hidden absolute right-8 bottom-8 ${routeName === "" ? 'hidden' : 'md:block'}`}>
+        <div className="vertical-text py-2 bg-info  uppercase text-sm">
+          {routeName}
+        </div>
       </div>
     </section>
   );

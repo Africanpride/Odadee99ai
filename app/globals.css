@@ -118,3 +118,13 @@ html {
   color: #000;
   background-image: url("https://assets-global.website-files.com/65e8452720d945d9e0d262e3/65e8580351db331c8d272ba7_ic-black.svg");
 }
+
+
+.vertical-text {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  height: auto; /* Adjust height as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

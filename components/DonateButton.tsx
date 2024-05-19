@@ -29,7 +29,7 @@ const DonateButton: React.FC<Props> = (props: Props) => {
   return (
     <div>
 
-      <button className={`btn ${props.smallSize ? 'btn-xs' : 'btn-sm md:btn-md'} w-auto hover:btn-info  btn-primary  
+      <button className={`btn ${props.smallSize ? 'btn-xs' : 'btn-sm md:btn-md'} w-auto hover:btn-info  btn-info  
         flex justify-center rounded-tr-2xl rounded-bl-2xl px-2 items-center ${props.className}`}
         
         onClick={openModal}
