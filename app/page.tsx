@@ -10,6 +10,7 @@ import SectionDisplay from "@/components/SectionIntro";
 import SectionHead from "@/components/SectionHead";
 import Image from "next/image";
 import SectionIntro2 from "@/components/SectionIntro2";
+import NextEvent from "@/components/NextEvent";
 
 export default function Home() {
   return (
@@ -17,9 +18,9 @@ export default function Home() {
       <SectionHead />
       <SectionIntro />
       <QuoteAI />
-       <SectionIntro2 />
-
-        <ProjectBreakdown />
+      <SectionIntro2 />
+      <NextEvent />
+      <ProjectBreakdown />
 
       <Movement />
 

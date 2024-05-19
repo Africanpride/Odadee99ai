@@ -128,7 +128,7 @@ const Newsletter: React.FC<Props> = () => {
               objectPosition="center"
               className="rounded-3xl"
             />
-            <Hourglass />
+            {/* <Hourglass /> */}
             {/* <p
               className={`${bebas.className} absolute bottom-4 left-4 text-2xl text-white `}
             >
@@ -146,7 +146,7 @@ const Newsletter: React.FC<Props> = () => {
               objectPosition="center"
               className="rounded-3xl"
             />
-            <Hourglass />
+            {/* <Hourglass /> */}
           </div>
           {/* <div
             className={`${bebas.className} bg-yellow-500 text-7xl  p-2 rounded-3xl text-white `}

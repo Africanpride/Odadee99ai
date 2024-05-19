@@ -20,11 +20,15 @@ const FAQS: React.FC = () => {
       <div className=" bg-lightblue">
         <div className="flex flex-col max-w-6xl mx-auto md:flex-row">
           <div className="w-full md:mr-8  md:w-1/3 space-y-3">
-            <div className={`${bebas.className} text-5xl font-extrabold md:tracking-normal leading-9 `}>
+            <div
+              className={`${bebas.className} text-5xl font-extrabold md:tracking-normal leading-9 `}
+            >
               <h2>Frequently-asked questions</h2>
             </div>
             <p className="text-md text-left">
-            Got questions about the Odadee 99 AI Lab project? We&apos;ve got answers! Explore our FAQs to learn more about the project, its goals, and how you can get involved.
+              Got questions about the Odadee 99 AI Lab project? We&apos;ve got
+              answers! Explore our FAQs to learn more about the project, its
+              goals, and how you can get involved.
             </p>
           </div>
           <dl className="w-full md:w-2/3">
@@ -36,11 +40,11 @@ const FAQS: React.FC = () => {
             <dd className="mb-16">
               <p>
                 The Odadee 99 Year Group Legacy Project aims to construct and
-                equip an Artificial Intelligence (AI) lab at Presbyterian Boys&apos;
-                High School (Presec - Legon) in Ghana, their alma mater. This
-                lab, named the Presec 1999 eXperience Centre, will empower
-                students with the tools and resources to succeed in an AI-driven
-                world.
+                equip an Artificial Intelligence (AI) lab at Presbyterian
+                Boys&apos; High School (Presec - Legon) in Ghana, their alma
+                mater. This lab, named the Presec 1999 eXperience Centre, will
+                empower students with the tools and resources to succeed in an
+                AI-driven world.
               </p>
             </dd>
             <dt className="mb-4">
