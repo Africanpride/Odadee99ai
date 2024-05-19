@@ -37,7 +37,7 @@ const About = () => {
         introText={introText1}
       />
       <FAQS />
-      {/* <MissionVision animationDisplay={true} /> */}
+      <MissionVision animationDisplay={true} icon={<CadioAnimation />} />
       <SectionIntro title="Vision of the AI Lab" introText={introText2} />
     </React.Fragment>
   );

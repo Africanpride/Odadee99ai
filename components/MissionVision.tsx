@@ -18,7 +18,7 @@ const MissionVision = (props: Props) => {
   const defaultAnimate = `<div className="pulse hidden md:inline-block"></div>`;
 
   return (
-    <div className=" w-full p-4 py-12 md:p-12 ">
+    <div className=" w-full p-2 md:p-8 md:pt-0.5 md:py-24 ">
       <article className="relative min-h-auto md:min-h-dvh  p-4 rounded-3xl  bg-blue-800 md:p-32 w-full flex flex-col justify-center">
 
         <div className="flex justify-between items-center">

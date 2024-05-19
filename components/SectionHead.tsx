@@ -13,7 +13,7 @@ type Props = {
 };
 const SectionHead = (props: Props) => {
   return (
-    <section className="relative h-auto md:h-[80dvh] overflow-x-hidden p-4 md:pb-4 md:pt-8 md:px-8 flex flex-col items-start justify-end ">
+    <section className="relative h-auto md:h-[70dvh] overflow-x-hidden p-4 md:pb-4 md:pt-8 md:px-8 flex flex-col items-start justify-end ">
       <div
         style={{ lineHeight: 0.8 }}
         className={`${poppins.className} text-blue-600  pt-44 font-extrabold leading-[3rem]  text-[30px] md:text-[5.5rem]  `}

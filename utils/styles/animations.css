@@ -546,7 +546,7 @@
 
 .cadio {
   --uib-size: 45px;
-  --uib-color: blue;
+  --uib-color: rgb(178, 214, 231);
   --uib-speed: 1.75s;
   --uib-bg-opacity: .1;
   height: 31.25px;

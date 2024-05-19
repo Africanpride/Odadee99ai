@@ -7,7 +7,7 @@ const NextEvent = (props: Props) => {
   return (
     <>
       {/* component */}
-      <section className="flex flex-col justify-center h-dvh hidden">
+      <section className=" flex-col justify-center h-dvh hidden">
         <div className="relative flex flex-col md:flex-row md:space-x-5 space-y-3 md:space-y-0 rounded-xl shadow-lg p-3 max-w-xs md:max-w-7xl mx-auto border border-white bg-gray-300">
           <div className="w-full md:w-1/3  grid place-items-center ">
             <Image width={500} height={500}

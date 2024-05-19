@@ -1,0 +1,37 @@
+import React from "react";
+//SEO Keywords List
+export const keywords = [
+    "Presbyterian Boys High School Presec Legon alumni",
+    "Presec AI lab project 1999 alumni",
+    "Artificial Intelligence lab Presec Ghana",
+    "Odadee 99 Year Group AI lab initiative",
+    "Presec 1999 eXperience Centre",
+    "Presec legacy project AI lab",
+    "Sustainable AI lab Presec Legon",
+    "High School STEM education Ghana",
+    "Presec Legon STEM excellence",
+    "Presec alumni donations AI lab",
+    "Presec Legon school history",
+    "Presec Speech and Prize Giving Day 2024",
+    "National Science and Maths Quiz Presec",
+    "Presec high school achievements",
+    "Presec alumni community engagement",
+    "Corporate sponsorship AI lab Ghana",
+    "Odadee 1999 alumni network",
+    "Presec educational development",
+    "AI and robotics education Ghana",
+    "Presec STEM programs and awards",
+    "Presec school events 2024",
+    "Presec high school mentors industry experts",
+    "Odadee 99 Year Group volunteer opportunities",
+    "Presec school facility sustainability",
+    "AI lab Presec corporate benefits",
+    "Presec Legon student empowerment",
+    "Presec alumni news and events",
+    "Presec high school community impact",
+    "Presec AI lab equipment donation",
+    "Presec alumni network benefits",
+    "Presec 1999 alumni contact",
+  ];
+  
+
