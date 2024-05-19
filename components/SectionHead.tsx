@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import ButtonUI from "./ButtonUI";
-import { poppins, playfair_display } from "@/utils/styles/fonts";
+import { poppins, playfair_display, bebas } from "@/utils/styles/fonts";
 import DonateButton from "./DonateButton";
 import { useRouter, usePathname } from 'next/navigation';
 
@@ -60,7 +60,7 @@ const SectionHead = (props: Props) => {
         />
       </div>
       <div data-theme="dark" className={`hidden absolute right-8 bottom-8 ${routeName === "" ? 'hidden' : 'md:block'}`}>
-        <div className="vertical-text py-2 bg-info  uppercase text-sm">
+        <div className={`${bebas.className} vertical-text py-2 bg-info  uppercase text-sm font-bold`}>
           {routeName}
         </div>
       </div>

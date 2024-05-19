@@ -37,9 +37,6 @@ const MainMenu: React.FC<MainMenuProps> = ({ isOpen, closeMenu }) => {
           <li>
             <Link href='/contact' onClick={closeMenu}>Contact Us</Link>
           </li>
-          <li>
-            <Link href='/donate-now' onClick={closeMenu}>Donate Now</Link>
-          </li>
         </ul>
       )}
     </div>
