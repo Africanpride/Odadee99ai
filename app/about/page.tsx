@@ -1,15 +1,15 @@
-"use client"
+"use client";
 import ArticilesExcerpts from "@/components/ArticilesExcerpts";
 import SectionIntro2 from "@/components/SectionIntro2";
 import SectionIntro from "@/components/SectionIntro";
 import SectionHead from "@/components/SectionHead";
-import React, {useEffect, useState} from "react";
+import React from "react";
 import FAQS from "../../components/FAQS";
 import MissionVision from "@/components/MissionVision";
 import dynamic from "next/dynamic";
-import CadioAnimation from "@/utils/CadioAnimation";
 
-// const CadioAnimation = dynamic(() => import("@/utils/CadioAnimation"), { ssr: false });
+// Dynamically import CadioAnimation with SSR disabled
+const CadioAnimation = dynamic(() => import("@/utils/CadioAnimation"), { ssr: false });
 
 const title = `Reunited with a shared vision`;
 const introBlock = (
@@ -28,12 +28,6 @@ const introText1 = `Driven by our commitment to giving back, we are embarking on
 const introText2 = `Driven by our commitment to giving back, we are embarking on this ambitious project as a way to honour our alma mater and the pivotal role it played in shaping our lives. Our dedication knows no bounds as we work tirelessly to ensure the project becomes a beacon of innovation and excellence within the school and its surrounding communities.`;
 
 const About = () => {
-  // const [isClient, setIsClient] = useState(false);
-
-  // useEffect(() => {
-  //   setIsClient(true);
-  // }, []);
-
   return (
     <React.Fragment>
       <SectionHead />
@@ -43,8 +37,7 @@ const About = () => {
         introText={introText1}
       />
       <FAQS />
-      <MissionVision animationDisplay={true} icon={<CadioAnimation />} />
-
+      {/* <MissionVision animationDisplay={true} /> */}
       <SectionIntro title="Vision of the AI Lab" introText={introText2} />
     </React.Fragment>
   );

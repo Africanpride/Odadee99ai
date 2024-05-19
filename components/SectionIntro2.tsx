@@ -12,11 +12,7 @@ import {
 import ImageGrid from "./ImageGrid";
 import ButtonUI from "./ButtonUI";
 import DonateButton from "./DonateButton";
-import { helix } from "ldrs";
 import HelixAnimation from "@/utils/HelixAnimation";
-import PulseAnimation from "@/utils/PulseAnimation";
-
-helix.register();
 
 // Default values shown
 

@@ -1,13 +1,16 @@
-import React from 'react';
-import { helix } from "ldrs";
-
-helix.register();
-
+import React from "react";
 
 const HelixAnimation = () => {
   return (
-    <div><l-helix size={45} speed="2.5" color="#2563eb" /></div>
-  )
-}
+    <div className="helix">
+      <div className="slice" />
+      <div className="slice" />
+      <div className="slice" />
+      <div className="slice" />
+      <div className="slice" />
+      <div className="slice" />
+    </div>
+  );
+};
 
-export default HelixAnimation
+export default HelixAnimation;

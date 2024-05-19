@@ -1,13 +1,7 @@
 import List from "@/components/List";
 import ListItem from "@/components/ListItem";
 import { bebas, inter, poppins } from "@/utils/styles/fonts";
-import {
-  ArrowUpRight,
-  ArrowUpRightFromCircle,
-  ArrowUpRightFromSquare,
-  ChevronRightCircleIcon,
-  ChevronRightSquareIcon,
-} from "lucide-react";
+import { ArrowUpRight, ArrowUpRightFromCircle, ArrowUpRightFromSquare, ChevronRightCircleIcon, ChevronRightSquareIcon } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 
@@ -19,8 +13,7 @@ const Contact = (props: Props) => {
     {
       platform: "TikTok",
       link: "https://www.tiktok.com/",
-      description:
-        "Our favorite social network, we use the others out of obligation",
+      description: "Our favorite social network, we use the others out of obligation",
     },
     {
       platform: "Instagram",
@@ -38,15 +31,16 @@ const Contact = (props: Props) => {
       description: "Connect with friends, family and other people you know",
     },
   ];
+
   return (
     <React.Fragment>
       <List>
-      {socials.map((social, index) => (
-        <ListItem key={index} link={social.link} platform={social.platform} number={index+1}  />
-      ))}
+        {socials.map((social, index) => (
+          <ListItem key={index} link={social.link} platform={social.platform} number={index + 1} description={social.description} />
+        ))}
       </List>
     </React.Fragment>
-  ); 
+  );
 };
 
 export default Contact;
