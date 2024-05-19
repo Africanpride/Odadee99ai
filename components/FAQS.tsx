@@ -20,7 +20,7 @@ const FAQS: React.FC = () => {
       <div className=" bg-lightblue">
         <div className="flex flex-col max-w-6xl mx-auto md:flex-row">
           <div className="w-full md:mr-8  md:w-1/3 space-y-3">
-            <div className={`${bebas.className} text-5xl font-extrabold leading-9`}>
+            <div className={`${bebas.className} text-5xl font-extrabold md:tracking-normal leading-9 `}>
               <h2>Frequently-asked questions</h2>
             </div>
             <p className="text-md text-left">
