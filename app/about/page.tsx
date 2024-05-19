@@ -1,15 +1,13 @@
 "use client";
-import ArticilesExcerpts from "@/components/ArticilesExcerpts";
+import React from "react";
+import dynamic from "next/dynamic";
 import SectionIntro2 from "@/components/SectionIntro2";
 import SectionIntro from "@/components/SectionIntro";
 import SectionHead from "@/components/SectionHead";
-import React from "react";
 import FAQS from "../../components/FAQS";
-import MissionVision from "@/components/MissionVision";
-import dynamic from "next/dynamic";
 
-// Dynamically import CadioAnimation with SSR disabled
 const CadioAnimation = dynamic(() => import("@/utils/CadioAnimation"), { ssr: false });
+const MissionVision = dynamic(() => import("@/components/MissionVision"), { ssr: false });
 
 const title = `Reunited with a shared vision`;
 const introBlock = (
@@ -37,7 +35,7 @@ const About = () => {
         introText={introText1}
       />
       <FAQS />
-      <MissionVision animationDisplay={true} icon={<CadioAnimation />} />
+      <MissionVision />
       <SectionIntro title="Vision of the AI Lab" introText={introText2} />
     </React.Fragment>
   );

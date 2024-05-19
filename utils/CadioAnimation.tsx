@@ -1,9 +1,8 @@
-"use client";
 import React from "react";
 
 const CadioAnimation = () => {
   return (
-    <div>
+    <React.Fragment>
       <svg
         className="cadio"
         x="0px"
@@ -28,7 +27,7 @@ const CadioAnimation = () => {
           d="M0.625 21.5 h10.25 l3.75 -5.875 l7.375 15 l9.75 -30 l7.375 20.875 v0 h10.25"
         />
       </svg>
-    </div>
+    </React.Fragment>
   );
 };
 
