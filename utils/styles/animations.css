@@ -383,7 +383,7 @@
 
 .helix {
   --uib-size: 45px;
-  --uib-color: black;
+  --uib-color: blue;
   --uib-speed: 2.5s;
   display: flex;
   flex-direction: column;
@@ -546,7 +546,7 @@
 
 .cadio {
   --uib-size: 45px;
-  --uib-color: black;
+  --uib-color: blue;
   --uib-speed: 1.75s;
   --uib-bg-opacity: .1;
   height: 31.25px;

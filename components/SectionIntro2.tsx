@@ -37,7 +37,7 @@ const SectionIntro2: React.FC<Props> = (props: Props) => {
         <div className="flex h-auto md:min-h-dvh flex-col items-start justify-between md:p-12 p-4 rounded-3xl bg-blue-400/30  border-opacity-15  space-y-2 ">
           <div className="w-full flex justify-between items-center py-5 ">
             <div
-              className={`${ibm_plex_sans_condense.className} font-bold text-lg md:text-xl  tracking-tighter uppercase col-span-4  `}
+              className={`${ibm_plex_sans_condense.className} font-bold text-lg md:text-xl lg:text-2xl   tracking-tighter uppercase col-span-4  `}
             >
               {props.title || titletext} {/* Use default or passed title */}
             </div>
@@ -45,9 +45,9 @@ const SectionIntro2: React.FC<Props> = (props: Props) => {
             {props.animationDisplay ? defaultAnimate : <HelixAnimation />}
             {/* {props.animationDisplay ? defaultAnimate : <PulseAnimation />} */}
           </div>
-          <div className="prose">
+          <div className=" space-y-4 text-lg">
             <p
-              className={` md:prose-2xl tracking-snug leading-snug break-keep	 ${inter_tight.className}`}
+              className={`text-lg md:text-xl lg:text-2xl tracking-snug leading-snug break-keep	 ${inter_tight.className}`}
             >
               {props.introBlock
                 ? props.introBlock

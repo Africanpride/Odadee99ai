@@ -60,7 +60,7 @@ const Newsletter: React.FC<Props> = () => {
   };
 
   return (
-    <section className="p-4 md:p-8 bg-zinc-50 dark:bg-black">
+    <section className="p-4 md:p-8 bg-black">
       <div className="p-4 md:p-6 rounded-3xl bg-blue-600  h-auto min-h-dvh  grid grid-cols-1 md:grid-cols-3 gap-x-4">
         <form
           onSubmit={handleSubmit}

@@ -1,4 +1,3 @@
-
 import ArticilesExcerpts from "@/components/ArticilesExcerpts";
 import FAQS from "@/components/FAQS";
 import MiddleStats from "@/components/MiddleStats";
@@ -10,6 +9,7 @@ import SectionIntro from "@/components/SectionIntro";
 import SectionDisplay from "@/components/SectionIntro";
 import SectionHead from "@/components/SectionHead";
 import Image from "next/image";
+import SectionIntro2 from "@/components/SectionIntro2";
 
 export default function Home() {
   return (
@@ -17,10 +17,12 @@ export default function Home() {
       <SectionHead />
       <SectionIntro />
       <QuoteAI />
-      <ArticilesExcerpts />
-      <ProjectBreakdown />
+       <SectionIntro2 />
+
+        <ProjectBreakdown />
+
       <Movement />
-      
+
       {/* <MiddleStats /> */}
       {/* <FAQS /> */}
       {/* <InfinityImage /> */}
@@ -28,7 +30,6 @@ export default function Home() {
         full screen rendering ....
       </main> */}
       <Newsletter />
-
     </div>
   );
 }
