@@ -10,6 +10,11 @@ import React from "react";
 import ProjectBreakdownLi from "./ProjectBreakdownLi";
 import Hourglass from "@/utils/Hourglass";
 import { HourglassIcon } from "lucide-react";
+import { TextGenerateEffect } from "./ui/text-generate-effect";
+
+const IntroduceProject = `The new AI lab is a launchpad for future leaders! Students will
+explore AI's potential, collaborate, and make a positive impact on
+the world.`;
 
 const why = {
   maintitle: `why AI Lab?`,
@@ -52,9 +57,10 @@ const ProjectBreakdown = () => {
             AI Lab: Empowered Future
           </h2>
           <p className={` ${inter.className} mt-2 text-xl`}>
+            {/* <TextGenerateEffect words={IntroduceProject} /> */}
             The new AI lab is a launchpad for future leaders! Students will
-            explore AI&apos;s potential, collaborate, and make a positive impact on
-            the world.
+            explore AI&apos;s potential, collaborate, and make a positive impact
+            on the world.
           </p>
         </div>
         <ul
@@ -70,14 +76,12 @@ const ProjectBreakdown = () => {
             maintitle={vision.maintitle}
             title={vision.title}
             description={vision.description}
-            />
-          <ProjectBreakdownLi 
+          />
+          <ProjectBreakdownLi
             maintitle={how.maintitle}
             title={how.title}
             description={how.description}
-
           />
-
         </ul>
       </div>
     </section>

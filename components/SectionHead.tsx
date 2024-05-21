@@ -4,6 +4,7 @@ import ButtonUI from "./ButtonUI";
 import { poppins, playfair_display, bebas } from "@/utils/styles/fonts";
 import DonateButton from "./DonateButton";
 import { useRouter, usePathname } from 'next/navigation';
+import Image from "next/image";
 
 type Props = {
   text?: string;
@@ -20,6 +21,14 @@ const SectionHead = (props: Props) => {
 
   return (
     <section className="relative h-auto md:h-[70dvh] overflow-x-hidden p-4 md:pb-4 md:pt-8 md:px-8 flex flex-col items-start justify-end overflow-hidden ">
+                 <Image
+              src={"/images/banner.svg"}
+              alt="Presec Legon AI Laboratory 2"
+              fill={true}
+              objectFit="cover"
+              objectPosition="center"
+              className=""
+            />
       <div
         style={{ lineHeight: 0.8 }}
         className={`${poppins.className} text-blue-600 pt-44 font-extrabold leading-[3rem] text-[30px] md:text-[5.5rem]`}

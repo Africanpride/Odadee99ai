@@ -123,7 +123,7 @@ const Newsletter: React.FC<Props> = () => {
             <Image
               src={"/images/launch.jpg"}
               alt="Presec Legon AI Laboratory"
-              layout="fill"
+              fill={true}
               objectFit="cover"
               objectPosition="center"
               className="rounded-3xl"
