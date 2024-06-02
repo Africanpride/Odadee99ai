@@ -24,12 +24,13 @@ type Props = {
   introBlock?: React.ReactNode;
   animationDisplay?: boolean;
   icon?: React.ReactNode;
+  animation?: React.ReactNode;
 };
 
 const SectionIntro2: React.FC<Props> = (props: Props) => {
   const defaultAnimate = `<div className="pulse hidden md:inline-block"></div>`;
   return (
-    <section className="p-2 md:p-8 md:pt-0.5 md:py-24 bg-base-100 overflow-hidden">
+    <section className="p-2 md:p-8 md:pt-0 md:py-24 bg-base-100 overflow-hidden">
       <div className="grid grid-cols-1 md:grid-cols-2 md:gap-8 gap-4 h-auto ">
         <div className="flex  gap-4 bg-none   overflow-hidden  rounded-3xl ">
           <ImageGrid />
@@ -42,7 +43,7 @@ const SectionIntro2: React.FC<Props> = (props: Props) => {
               {props.title || titletext} {/* Use default or passed title */}
             </div>
 
-            {props.animationDisplay ? defaultAnimate : <HelixAnimation />}
+            { props.animation ?? <HelixAnimation />}
             {/* {props.animationDisplay ? defaultAnimate : <PulseAnimation />} */}
           </div>
           <div className=" space-y-4 text-lg">

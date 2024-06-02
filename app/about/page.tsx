@@ -24,7 +24,8 @@ const introBlock = (
 );
 const introText1 = `Driven by our commitment to giving back, we are embarking on this ambitious project as a way to honour our alma mater and the pivotal role it played in shaping our lives. Our dedication knows no bounds as we work tirelessly to ensure the project becomes a beacon of innovation and excellence within the school and its surrounding communities.`;
 const introText2 = `Driven by our commitment to giving back, we are embarking on this ambitious project as a way to honour our alma mater and the pivotal role it played in shaping our lives. Our dedication knows no bounds as we work tirelessly to ensure the project becomes a beacon of innovation and excellence within the school and its surrounding communities.`;
-
+const introBlock1 = ``;
+const introBlock2 = `Join us in making a positive impact on Ghana's educational landscape. Your support, whether in kind or cash, will significantly contribute to establishing a world-class Artificial Intelligence Lab at our cherished alma mater, Presec - Legon.`;
 const About = () => {
   return (
     <React.Fragment>
@@ -36,7 +37,7 @@ const About = () => {
       />
       <FAQS />
       <MissionVision />
-      <SectionIntro title="Vision of the AI Lab" introText={introText2} />
+      <SectionIntro title="Vision of the AI Lab" introText={introText2} introBlock={introBlock2} />
     </React.Fragment>
   );
 };
