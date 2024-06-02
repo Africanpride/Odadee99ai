@@ -1,9 +1,8 @@
 "use client";
 import React from "react";
-import ButtonUI from "./ButtonUI";
+import { useRouter, usePathname } from "next/navigation";
 import { poppins, playfair_display, bebas } from "@/utils/styles/fonts";
 import DonateButton from "./DonateButton";
-import { useRouter, usePathname } from 'next/navigation';
 import Image from "next/image";
 
 type Props = {
@@ -15,20 +14,19 @@ type Props = {
 };
 
 const SectionHead = (props: Props) => {
-  const router = useRouter();
   const pathName = usePathname();
-  const routeName = pathName.startsWith('/') ? pathName.slice(1) : pathName;
+  const isHomeRoute = pathName === "/";
 
   return (
-    <section className="relative h-auto md:h-[70dvh] overflow-x-hidden p-4 md:pb-4 md:pt-8 md:px-8 flex flex-col items-start justify-end overflow-hidden ">
-                 <Image
+    <section className="relative h-auto md:h-[70dvh] overflow-x-hidden p-4 md:pb-4 md:pt-8 md:px-8 flex flex-col items-start justify-end overflow-hidden">
+      {/* <Image
               src={"/images/banner.svg"}
               alt="Presec Legon AI Laboratory 2"
               fill={true}
               objectFit="cover"
               objectPosition="center"
               className=""
-            />
+            /> */}
       <div
         style={{ lineHeight: 0.8 }}
         className={`${poppins.className} text-blue-600 pt-44 font-extrabold leading-[3rem] text-[30px] md:text-[5.5rem]`}
@@ -37,14 +35,23 @@ const SectionHead = (props: Props) => {
           props.description
         ) : (
           <React.Fragment>
-            Fostering A Legacy of{" "}
-            <span className={`${playfair_display.className} text-gray-400`}>
-              Learning
-            </span>{" "}
-            and{" "}
-            <span className={`${playfair_display.className} text-gray-400`}>
-              Leadership
-            </span>
+            <div className="py-3">
+              {!isHomeRoute && (
+                <div className="inline-flex bg-info text-sm uppercase px-3 py-1 text-white">
+                  {pathName.startsWith("/") ? pathName.slice(1) : pathName}
+                </div>
+              )}
+            </div>
+            <div>
+              Fostering A Legacy of{" "}
+              <span className={`${playfair_display.className} text-gray-400`}>
+                Learning
+              </span>{" "}
+              and{" "}
+              <span className={`${playfair_display.className} text-gray-400`}>
+                Leadership
+              </span>
+            </div>
           </React.Fragment>
         )}
       </div>
@@ -68,9 +75,16 @@ const SectionHead = (props: Props) => {
           }}
         />
       </div>
-      <div data-theme="dark" className={`hidden absolute right-8 bottom-8 ${routeName === "" ? 'hidden' : 'md:block'}`}>
-        <div className={`${bebas.className} vertical-text py-2 bg-info  uppercase text-sm font-bold`}>
-          {routeName}
+      <div
+        data-theme="dark"
+        className={`hidden absolute right-8 bottom-8 ${
+          isHomeRoute ? "hidden" : "md:block"
+        }`}
+      >
+        <div
+          className={`${bebas.className} vertical-text py-2 bg-info uppercase text-sm font-bold`}
+        >
+          {pathName.startsWith("/") ? pathName.slice(1) : pathName}
         </div>
       </div>
     </section>
