@@ -16,7 +16,7 @@ const QuoteAI: React.FC<Props> = ({
   title = "CEO, Nvidia",
 }) => {
   return (
-    <div className="bg-base-200 ">
+    <div className="bg-base-200 mb-8">
       <div className="max-w-7xl px-4 lg:px-8 py-12 lg:py-24 mx-auto">
         <blockquote className="max-w-5xl mx-auto">
           <p className="mb-6 md:text-lg">

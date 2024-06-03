@@ -12,6 +12,7 @@ import Image from "next/image";
 import SectionIntro2 from "@/components/SectionIntro2";
 import NextEvent from "@/components/NextEvent";
 import Infinity from "@/components/Infinity";
+import EmblaCarousel from "@/components/EmblaCarousel";
 
 export default function Home() {
   const introText2 = ` In alignment with the global push towards net-zero, the lab facility will be equipped with solar panels, ensuring environmentally responsible operation. This commitment to sustainability underscores our shared dedication to a greener future.`;
@@ -19,8 +20,12 @@ export default function Home() {
   return (
     <div>
       <SectionHead />
-      <div className="space-y-8">
+      <div className="space-y-3">
         <SectionIntro />
+        <div className="hidden">
+          <EmblaCarousel />
+        </div>
+
         <QuoteAI />
         <SectionIntro2
           title="Innovate, Inspire, Lead"

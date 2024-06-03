@@ -13,6 +13,7 @@ import ImageGrid from "./ImageGrid";
 import ButtonUI from "./ButtonUI";
 import DonateButton from "./DonateButton";
 import DonateOptions from "@/utils/DonateOptions";
+import ImageGridProject1 from "./ImageGridProject1";
 
 const titletext = `Empowering Tomorrow's Innovators`;
 
@@ -75,7 +76,7 @@ const SectionIntro: React.FC<Props> = (props: Props) => {
           </div>
         </div>
         <div className="hidden md:flex  gap-4 bg-none    overflow-hidden  rounded-3xl ">
-          <ImageGrid />
+          <ImageGridProject1 />
         </div>
       </div>
     </section>
