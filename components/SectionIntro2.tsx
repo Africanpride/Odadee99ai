@@ -25,15 +25,19 @@ type Props = {
   animationDisplay?: boolean;
   icon?: React.ReactNode;
   animation?: React.ReactNode;
+  imageGrid?: React.ReactNode;
+  className?: string | null;
+  topSpace?: boolean | null; // Are we adding space to the top
 };
+
 
 const SectionIntro2: React.FC<Props> = (props: Props) => {
   const defaultAnimate = `<div className="pulse hidden md:inline-block"></div>`;
   return (
-    <section className="p-2 md:p-8 md:pt-0 md:py-24 bg-base-100 overflow-hidden">
+    <section className={`${props.className} p-2 md:p-8 ${props.topSpace ?? 'md:pt-0 '}  md:py-24 bg-base-100 overflow-hidden`}>
       <div className="grid grid-cols-1 md:grid-cols-2 md:gap-8 gap-4 h-auto ">
         <div className="flex  gap-4 bg-none   overflow-hidden  rounded-3xl ">
-          <ImageGrid />
+          {props.imageGrid ?? <ImageGrid />}
         </div>
         <div className="flex h-auto md:min-h-dvh flex-col items-start justify-between md:p-12 p-4 rounded-3xl bg-blue-400/30  border-opacity-15  space-y-2 ">
           <div className="w-full flex justify-between items-center py-5 ">

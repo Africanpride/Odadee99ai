@@ -5,6 +5,7 @@ import SectionIntro2 from "@/components/SectionIntro2";
 import SectionIntro from "@/components/SectionIntro";
 import SectionHead from "@/components/SectionHead";
 import FAQS from "../../components/FAQS";
+import ImageGridProject2 from "@/components/ImageGridProject2";
 
 const CadioAnimation = dynamic(() => import("@/utils/CadioAnimation"), { ssr: false });
 const MissionVision = dynamic(() => import("@/components/MissionVision"), { ssr: false });
@@ -34,6 +35,7 @@ const About = () => {
         title={title}
         introBlock={introBlock}
         introText={introText1}
+        imageGrid={<ImageGridProject2 />}
       />
       <FAQS />
       <MissionVision />

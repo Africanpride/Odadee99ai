@@ -13,6 +13,7 @@ import SectionIntro2 from "@/components/SectionIntro2";
 import NextEvent from "@/components/NextEvent";
 import Infinity from "@/components/Infinity";
 import EmblaCarousel from "@/components/EmblaCarousel";
+import ImageGridProject1 from "@/components/ImageGridProject1";
 
 export default function Home() {
   const introText2 = ` In alignment with the global push towards net-zero, the lab facility will be equipped with solar panels, ensuring environmentally responsible operation. This commitment to sustainability underscores our shared dedication to a greener future.`;
@@ -21,7 +22,7 @@ export default function Home() {
     <div>
       <SectionHead />
       <div className="space-y-3">
-        <SectionIntro />
+        <SectionIntro imageGrid={<ImageGridProject1 />} />
         <div className="hidden">
           <EmblaCarousel />
         </div>
@@ -33,6 +34,7 @@ export default function Home() {
           introBlock={introBlock2}
           animationDisplay={true}
           animation={<Infinity />}
+          topSpace={true}
         />
         <NextEvent />
       </div>

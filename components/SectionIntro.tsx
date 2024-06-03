@@ -21,11 +21,14 @@ type Props = {
   title?: string; // Optional string prop with default value
   introText?: string | null;
   introBlock?: string | null;
+  imageGrid?: React.ReactNode;
+  className?: string | null;
+  topSpace?: boolean | null; // Are we adding space to the top
 };
 
 const SectionIntro: React.FC<Props> = (props: Props) => {
   return (
-    <section className="p-2 md:p-8 md:pt-0.5 md:py-24 bg-base-100 overflow-hidden  ">
+    <section className={`${props.className} p-2 md:p-8 ${props.topSpace ?? 'md:pt-0 '}  md:py-24 bg-base-100 overflow-hidden`}>
       <div className="grid grid-cols-1 md:grid-cols-2 md:gap-8 gap-4 h-auto ">
         <div className="flex h-auto md:min-h-dvh flex-col items-start justify-between md:p-12 p-4 rounded-3xl bg-blue-400/30  border-opacity-15  space-y-2 ">
           <div className="w-full flex justify-between items-center py-5 ">
@@ -76,7 +79,7 @@ const SectionIntro: React.FC<Props> = (props: Props) => {
           </div>
         </div>
         <div className="hidden md:flex  gap-4 bg-none    overflow-hidden  rounded-3xl ">
-          <ImageGridProject1 />
+        {props.imageGrid ?? <ImageGridProject1 />} 
         </div>
       </div>
     </section>
