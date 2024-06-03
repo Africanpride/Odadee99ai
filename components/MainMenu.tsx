@@ -32,7 +32,7 @@ const MainMenu: React.FC<MainMenuProps> = ({ isOpen, closeMenu }) => {
             <Link href='/alumni-network' onClick={closeMenu}>Alumni Network</Link>
           </li>
           <li>
-            <Link href='/resources' onClick={closeMenu}>Resources</Link>
+            <Link href='/gallery' onClick={closeMenu}>Project Gallery</Link>
           </li>
           <li>
             <Link href='/contact' onClick={closeMenu}>Contact Us</Link>

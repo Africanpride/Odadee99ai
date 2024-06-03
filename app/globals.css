@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url(../utils/styles/masonry.css);
 @import url(../utils/styles/animations.css);
 
 /* html tag that */

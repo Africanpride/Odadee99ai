@@ -44,12 +44,13 @@ const DonateButton2: React.FC<Props> = (props: Props) => {
           className="modal bg-base-content  p-4 md:p-0"
           open
         >
-          <div className="modal-box   max-w-5xl p-4">
+
+          <div className="modal-box   max-w-3xl p-4">
             <h3 className="font-bold text-lg">
               {props.title || "Odadee99AI Donation"}
             </h3>
             <div className="py-4">
-              {props.children || "Link to Payment API (Paypal & Stripe)"}
+              {props.children || "Link to Payment API (Paypal & Stripe or GoFundme)"}
             </div>
             <div className="modal-action">
               <button className="btn" onClick={closeModal}>
@@ -57,6 +58,8 @@ const DonateButton2: React.FC<Props> = (props: Props) => {
               </button>
             </div>
           </div>
+
+          
         </dialog>
       )}
     </div>

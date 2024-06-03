@@ -5,7 +5,7 @@ type Props = {}
 const DonateOptions = (props: Props) => {
     
   return (
-    <div>Link to Payment API (Paypal & Stripe) ...cc</div>
+    <div>Link to Payment API (Paypal & Stripe or) ...cc</div>
   )
 }
 
