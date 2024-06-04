@@ -19,7 +19,7 @@ const MainMenu: React.FC<MainMenuProps> = ({ isOpen, closeMenu }) => {
           <li>
             <Link href='/about' onClick={closeMenu}>About Us</Link>
           </li>
-          <li>
+          {/* <li>
             <Link href='/get-involved' onClick={closeMenu}>Get Involved</Link>
           </li>
           <li>
@@ -30,7 +30,7 @@ const MainMenu: React.FC<MainMenuProps> = ({ isOpen, closeMenu }) => {
           </li>
           <li>
             <Link href='/alumni-network' onClick={closeMenu}>Alumni Network</Link>
-          </li>
+          </li> */}
           <li>
             <Link href='/gallery' onClick={closeMenu}>Project Gallery</Link>
           </li>

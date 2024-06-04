@@ -35,7 +35,7 @@ export default function EmblaCarousel() {
                   alt={`Gallery Image ${index + 1}`}
                   width={500} // Adjust width as needed
                   height={300} // Adjust height as needed
-                  objectFit="cover" // Optional: to maintain aspect ratio
+                  className="rounded-3xl object-cover	object-center	"
                 />
               </div>
             ))}

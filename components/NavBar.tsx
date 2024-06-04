@@ -3,8 +3,9 @@ import TextLogo from "./TextLogo";
 import React, { useState, useEffect } from "react";
 import { Sun, Moon } from "lucide-react";
 import MainMenu from "./MainMenu";
-import DonateButton2 from "../utils/DonateButton2";
-import DonateOptions from "@/utils/DonateOptions";
+import DonateButton2 from "./DonateButton2";
+import DonateOptions from "@/components/DonateOptions";
+import DonationOptions from "./DonationOptions";
 
 const NavBar = () => {
   type Theme = "lofi" | "black";
@@ -64,7 +65,7 @@ const NavBar = () => {
         <div className="flex justify-end items-center gap-x-2">
           <div>
             <DonateButton2 smallSize={true}>
-              <DonateOptions />
+              <DonationOptions />
             </DonateButton2>
           </div>
           <div className="hidden md:inline-block">

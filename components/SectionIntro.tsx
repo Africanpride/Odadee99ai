@@ -12,8 +12,9 @@ import {
 import ImageGrid from "./ImageGrid";
 import ButtonUI from "./ButtonUI";
 import DonateButton from "./DonateButton";
-import DonateOptions from "@/utils/DonateOptions";
+import DonateOptions from "@/components/DonateOptions";
 import ImageGridProject1 from "./ImageGridProject1";
+import DonationOptions from "./DonationOptions";
 
 const titletext = `Empowering Tomorrow's Innovators`;
 
@@ -74,7 +75,7 @@ const SectionIntro: React.FC<Props> = (props: Props) => {
               actiontext="Donate Now"
               className="btn-outline btn-info text-lg font-normal md:text-lg"
             >
-              <DonateOptions />
+              <DonationOptions />
             </DonateButton>
           </div>
         </div>

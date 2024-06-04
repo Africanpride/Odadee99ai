@@ -1,8 +1,8 @@
 "use client";
 import React from "react";
 import { ibm_plex_sans_condense } from "@/utils/styles/fonts";
-import CadioAnimation from "@/utils/CadioAnimation";
-import HelixAnimation from "@/utils/HelixAnimation";
+import CadioAnimation from "@/components/CadioAnimation";
+import HelixAnimation from "@/components/HelixAnimation";
 import { cardio } from "ldrs";
 
 cardio.register();

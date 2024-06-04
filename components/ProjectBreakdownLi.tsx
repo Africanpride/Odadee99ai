@@ -6,7 +6,7 @@ import {
   sourceCodePro400,
 } from "@/utils/styles/fonts";
 import { ChevronRightIcon } from "lucide-react";
-import Griddy from "@/utils/Griddy";
+import Griddy from "@/components/Griddy";
 import Link from "next/link";
 
 type Props = {

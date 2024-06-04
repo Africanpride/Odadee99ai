@@ -4,35 +4,47 @@ import "./globals.css";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 import PrelineScript from "@/components/PrelineScript";
-import { keywords } from "@/utils/SEO";
+import { keywords } from "@/components/SEO";
 
 
 export const metadata = {
   metadataBase: new URL('https://www.odadee99ai.net'),
-  alternates: {
+  alternates: { 
     canonical: '/',
     languages: {
       'en-US': '/en-US'
     },
   },
   formatDetection: {
-    email: "info@odadee99ai.net",
-    address: "7P.O. Box LG 98, Legon, Accra. Ghana",
-    telephone: "+27 633 817 805",
+    email: "Odade3.99alumni@gmail.com",
+    address: "P.O. Box LG 98, Legon, Accra, Ghana",
+    telephone: "+233 24 484 4893",
   },
   title: {
     default: 'Presec 1999 eXperience Centre',
   },
   description:
-    "Presec 1999 eXperience Centre in sandton, Johannesburg offers a wide range of hair services, including blowouts, weaves, braids, treatments, and more.",
-  keywords: keywords.join(", "),
+    "Join the Presec 1999 Year Group as we embark on an inspiring journey to establish the Presec 1999 eXperience Centre, an AI lab dedicated to empowering future generations.",
+  keywords: [
+    "Presec 1999 eXperience Centre",
+    "Artificial Intelligence Lab",
+    "Presec Legon",
+    "AI education",
+    "Alumni project",
+    "STEM education",
+    "Sustainability",
+    "Educational innovation",
+    "AI lab Ghana",
+    "Presec alumni",
+    "Odadee 99 Year Group"
+  ].join(", "),
   siteName: "Presec 1999 eXperience Centre",
 
   authors: [
-    { name: 'Pius Opoku-Fofie'}
+    { name: 'Pius Opoku-Fofie' }
   ],
 
-  image: "../public/hair-tools.jpg",
+  image: "../public/ai-lab.jpg",
   url: "https://www.odadee99ai.net",
   type: "website",
   locale: "en_US",
@@ -42,16 +54,20 @@ export const metadata = {
     url: "https://www.odadee99ai.net",
     title: "Presec 1999 eXperience Centre",
     description:
-      "Discover the best hair services at Presec 1999 eXperience Centre in Johannesburg. From stylish blowouts to trendy weaves and braids, we've got your hair needs covered.",
-    image: "../public/hair-tools.jpg",
+      "Discover the transformative impact of the Presec 1999 eXperience Centre, a cutting-edge AI lab fostering innovation and education for future leaders.",
+    image: "../public/ai-lab.jpg",
     site_name: "Presec 1999 eXperience Centre",
   },
-  // Add more specific Twitter Card tags for Twitter sharing
-  // twitter: {
-  //   cardType: "summary_large_image",
-  //   handle: "@yourtwitterhandle",
-  // },
+  twitter: {
+    cardType: "summary_large_image",
+    handle: "@Odadee99",
+    title: "Presec 1999 eXperience Centre",
+    description: "Support the Presec 1999 eXperience Centre and help empower the next generation with AI and technology skills.",
+    image: "../public/ai-lab.jpg",
+  },
+
 };
+
 
 export default function RootLayout({
   children,

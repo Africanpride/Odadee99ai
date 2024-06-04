@@ -11,7 +11,7 @@ import { MagnetIcon, Mail, Mails, User } from "lucide-react";
 import ButtonUI from "./ButtonUI";
 import Link from "next/link";
 import Image from "next/image";
-import Hourglass from "@/utils/Hourglass";
+import Hourglass from "@/components/Hourglass";
 
 type Props = {};
 
@@ -124,9 +124,7 @@ const Newsletter: React.FC<Props> = () => {
               src={"/images/launch.jpg"}
               alt="Presec Legon AI Laboratory"
               fill={true}
-              objectFit="cover"
-              objectPosition="center"
-              className="rounded-3xl"
+              className="rounded-3xl object-cover	object-center	"
             />
             {/* <Hourglass /> */}
             {/* <p
@@ -141,10 +139,8 @@ const Newsletter: React.FC<Props> = () => {
             <Image
               src={"/images/next2.jpg"}
               alt="Presec Legon AI Laboratory"
-              layout="fill"
-              objectFit="cover"
-              objectPosition="center"
-              className="rounded-3xl"
+              fill
+              className="rounded-3xl object-cover	object-center	"
             />
             {/* <Hourglass /> */}
           </div>

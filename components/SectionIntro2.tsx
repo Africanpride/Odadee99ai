@@ -12,7 +12,7 @@ import {
 import ImageGrid from "./ImageGrid";
 import ButtonUI from "./ButtonUI";
 import DonateButton from "./DonateButton";
-import HelixAnimation from "@/utils/HelixAnimation";
+import HelixAnimation from "@/components/HelixAnimation";
 
 // Default values shown
 

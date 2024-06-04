@@ -1,6 +1,8 @@
 // Donation Process starts from here.
 import React, { useState } from "react";
 import { sourceCodePro400 } from "@/utils/styles/fonts";
+import { CircleChevronRight, LucideSquareX } from "lucide-react";
+import Image from "next/image";
 
 type Props = {
   actiontext?: string;
@@ -41,25 +43,24 @@ const DonateButton2: React.FC<Props> = (props: Props) => {
       {showModal && (
         <dialog
           id="my_modal_1"
-          className="modal bg-base-content  p-4 md:p-0"
+          className="modal bg-base-content   p-4 md:p-0 "
           open
         >
+          <div className="modal-box flex bg-none md:max-w-7xl w-auto p-0 relative overflow-hidden">
+            <div className="w-full p-4 bg-white flex flex-col justify-between">
+              <div className="flex justify-between items-center gap-x-5 border-b border-neutral-200 pb-2">
+                <h3 className="font-bold md:text-lg text-info uppercase  ">
+                  {props.title || "Odadee99AI Donation Options"}
+                </h3>
+                <LucideSquareX className="text-info hover:text-red-600 cursor-pointer " onClick={closeModal}/>
+              </div>
+              <div className="py-2">
+                {props.children || "Link to Payment API (Paypal & Stripe)"}
+              </div>
 
-          <div className="modal-box   max-w-3xl p-4">
-            <h3 className="font-bold text-lg">
-              {props.title || "Odadee99AI Donation"}
-            </h3>
-            <div className="py-4">
-              {props.children || "Link to Payment API (Paypal & Stripe or GoFundme)"}
             </div>
-            <div className="modal-action">
-              <button className="btn" onClick={closeModal}>
-                Close
-              </button>
-            </div>
+            
           </div>
-
-          
         </dialog>
       )}
     </div>

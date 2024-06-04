@@ -8,7 +8,7 @@ import {
 } from "@/utils/styles/fonts";
 import React from "react";
 import ProjectBreakdownLi from "./ProjectBreakdownLi";
-import Hourglass from "@/utils/Hourglass";
+import Hourglass from "@/components/Hourglass";
 import { HourglassIcon } from "lucide-react";
 import { TextGenerateEffect } from "./ui/text-generate-effect";
 

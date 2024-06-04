@@ -4,6 +4,7 @@ import { useRouter, usePathname } from "next/navigation";
 import { poppins, playfair_display, bebas } from "@/utils/styles/fonts";
 import DonateButton from "./DonateButton";
 import Image from "next/image";
+import DonationOptions from "./DonationOptions";
 
 type Props = {
   text?: string;
@@ -11,6 +12,7 @@ type Props = {
   link?: string | null;
   description?: JSX.Element | null;
   actionText?: string | null;
+  hideText?: boolean | null;
 };
 
 const SectionHead = (props: Props) => {
@@ -42,7 +44,7 @@ const SectionHead = (props: Props) => {
                 </div>
               )}
             </div>
-            <div>
+            <div className={`${props.hideText ? 'hidden' : ''} `}>
               Fostering A Legacy of{" "}
               <span className={`${playfair_display.className} text-gray-400`}>
                 Learning
@@ -56,7 +58,9 @@ const SectionHead = (props: Props) => {
         )}
       </div>
       <div className="py-4">
-        <DonateButton />
+        <DonateButton>
+          <DonationOptions />
+        </DonateButton>
       </div>
       {/* <ButtonUI
         actionlink={props.link || "/"}
